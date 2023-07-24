@@ -1,0 +1,20 @@
+package assignment;
+
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+
+public class Assig_14 {
+	
+	public void timeByZone(String str) {
+		ZoneId zone=ZoneId.of(str);
+		ZonedDateTime time=ZonedDateTime.now(zone);
+		System.out.println("Current time at Zone "+str+" is : "+time);
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+	}
+
+}

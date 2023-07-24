@@ -1,0 +1,6 @@
+package lab2_2;
+
+public class Savings extends AccountMethod {
+	
+	private final int minimumBalance=500;
+}

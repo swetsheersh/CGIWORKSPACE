@@ -1,0 +1,22 @@
+package cgi_first_project;
+
+public class Project_1_4 {
+	private String firstName;
+	private String lastName;
+	private String gender;
+	private String age;
+	private String weight;
+	
+	public static void main(String[] args) {
+		
+		System.out.println("Person Details:");
+		System.out.println("-----------------");
+		System.out.println("First Name: ");
+		System.out.println("Last Name: ");
+		System.out.println("Gender: ");
+		System.out.println("Age: ");
+		System.out.println("Weight: ");
+
+	}
+
+}

@@ -1,0 +1,26 @@
+package assignment;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
+
+public class Assig_13 {
+	
+	public LocalDate warrenty(LocalDate date,int year,int month) {
+		date=date.plusMonths(month);
+		date=date.plusYears(year);
+		return date;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner=new Scanner(System.in);
+		String d;
+		System.out.println("Enter your product purchase date in (dd/mm/year) format: ");
+		d=scanner.nextLine();
+		DateTimeFormatter formatter=DateTimeFormatter.ofPattern("dd/mm/year");
+		LocalDate date=LocalDate.parse(d,formatter);
+
+	}
+
+}

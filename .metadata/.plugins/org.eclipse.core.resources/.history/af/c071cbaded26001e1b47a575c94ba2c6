@@ -1,0 +1,11 @@
+package cgi_assignment.constr;
+
+public class PersonMain {
+
+	public static void main(String[] args) {
+		Person obj=new Person("Divya","Bharathi",'F');
+		
+
+	}
+
+}

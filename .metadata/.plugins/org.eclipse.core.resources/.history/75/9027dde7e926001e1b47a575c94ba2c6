@@ -1,0 +1,17 @@
+package cgi_first_project_tc_constructor;
+
+public class Strudent {
+	private int id;
+	private String name;
+	public Strudent() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Strudent(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+	
+	
+}

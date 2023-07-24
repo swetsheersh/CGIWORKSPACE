@@ -1,0 +1,24 @@
+package tcinterface;
+
+public class TC_InterImpl implements TC_Interface {
+
+	@Override
+	public void show() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	@Override
+	public void hi() {
+		// TODO Auto-generated method stub
+		TC_Interface.super.hi();
+		System.out.println("hi i am from implemented class");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+
+}

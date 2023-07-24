@@ -1,0 +1,15 @@
+package assignment;
+
+public class Assig_10 {
+	//method
+	public static boolean checkpos(String str) {
+		return true;
+	}
+	
+	public static void main(String[] args) {
+		
+		String str="ANT";
+		System.out.println(checkpos(str));
+		
+	}
+}

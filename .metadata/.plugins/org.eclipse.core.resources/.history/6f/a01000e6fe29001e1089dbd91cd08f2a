@@ -1,0 +1,11 @@
+package snippet;
+
+public class Snippet {
+	Create Account for smith with initial balance as INR 2000 and for Kathy with initial  balance as 3000.(accNum should be auto generated).
+	Deposit 2000 INR to smith account.
+	Withdraw 2000 INR from Kathy account.
+	Display updated balances in both the account.
+	Generate toString() method.
+	
+}
+

@@ -1,0 +1,10 @@
+package abstruct;
+
+public class TC_AbsImpl {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

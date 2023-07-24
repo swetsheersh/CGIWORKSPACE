@@ -1,0 +1,10 @@
+package cgi_assignment.assign_1_7;
+
+public class PersonMain_1_8 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

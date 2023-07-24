@@ -1,0 +1,53 @@
+package lab2_1;
+
+import java.util.Random;
+
+public class AccountDetail {
+	
+	//parameters
+	private String accNum;
+    private String accHolder;
+    private int balance;
+    //getters and setters
+	public String getAccNum() {
+		return accNum;
+	}
+	public void setAccNum() {
+		this.accNum = this.generateAccNum();
+	}
+	public String getAccHolder() {
+		return accHolder;
+	}
+	public void setAccHolder(String accHolder) {
+		this.accHolder = accHolder;
+	}
+	public int getBalance() {
+		return balance;
+	}
+	public void setBalance(int balance) {
+		this.balance = balance;
+	}
+	//default constructor
+	public AccountDetail() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	//Parameterized constructor
+	public AccountDetail(String accNum, String accHolder, int balance) {
+		super();
+		this.accNum = accNum;
+		this.accHolder = accHolder;
+		this.balance = balance;
+	}
+	//tostring
+	@Override
+	public String toString() {
+		return "AccountDetail [accNum=" + accNum + ", accHolder=" + accHolder + ", balance=" + balance + "]";
+	}
+    
+    //account number 
+	private String generateAccNum() {
+        Random random = new Random();
+        return String.format("%09d", random.nextInt(1000000000));
+    }
+}

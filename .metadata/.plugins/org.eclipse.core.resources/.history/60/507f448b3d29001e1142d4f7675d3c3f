@@ -1,0 +1,15 @@
+package parametrize_test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.Before;
+import org.junit.jupiter.api.Test;
+
+class AdditionTest {
+	public Addition add;
+	@Before
+	public void setUp() {
+		add=new Addition();
+	}
+
+}

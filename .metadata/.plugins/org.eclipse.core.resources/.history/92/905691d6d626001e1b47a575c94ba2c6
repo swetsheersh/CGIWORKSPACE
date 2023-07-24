@@ -1,0 +1,29 @@
+package cgi_first_project;
+
+public class Project_1_4 {
+	private String firstName;
+	private String lastName;
+	private char gender;
+	private int age;
+	private double weight;
+	
+	public static void main(String[] args) {
+		
+		Project_1_4 obj= new Project_1_4();
+		obj.firstName="Divya";
+		obj.lastName="Bharathi";
+		obj.gender='F';
+		obj.age=20;
+		obj.weight=85.55;
+		
+		System.out.println("Person Details:");
+		System.out.println("-----------------");
+		System.out.println("First Name: ");
+		System.out.println("Last Name: ");
+		System.out.println("Gender: ");
+		System.out.println("Age: ");
+		System.out.println("Weight: ");
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package lab1_1_7_1_8;
+
+
+
+public class PersonMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Person obj=new Person("Divya","Bharathi",'F',123456789);
+		System.out.println("Person Details:");
+		System.out.println("-----------------");
+		System.out.println("First Name: "+obj.getFirstName());
+		System.out.println("Last Name: "+obj.getLastName());
+		System.out.println("Gender: "+obj.getGender());
+		System.out.println("Phone Number: "+obj.getPhoneNumber());
+
+	}
+
+}

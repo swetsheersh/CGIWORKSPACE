@@ -1,0 +1,12 @@
+package regex_cgi;
+
+import java.util.regex.Pattern;
+
+public class TC_Regex {
+	
+	public static void main(String[] args) {
+		
+		Pattern pattern=Pattern.compile("a*b");
+		System.out.println(Pattern.matches("abc", "abcd"));
+	}
+}

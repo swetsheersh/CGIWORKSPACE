@@ -1,0 +1,10 @@
+package cgi_first_project_tc_constructor;
+
+public class TC_Constructor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

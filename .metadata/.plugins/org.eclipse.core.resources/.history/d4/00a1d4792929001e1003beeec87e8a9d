@@ -1,0 +1,13 @@
+package junit_test.sampletest;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class TestJunit {
+	@Test
+	public void con() {
+		String str="hello";
+		assertEquals(str,"hello");
+	}
+}

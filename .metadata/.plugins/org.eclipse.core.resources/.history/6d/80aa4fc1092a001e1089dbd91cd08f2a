@@ -1,0 +1,15 @@
+package lab2_1;
+
+import java.util.ArrayList;
+
+public class AccountMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<AccountDetail> list=new ArrayList<AccountDetail>();
+		
+		AccountMethod method=new AccountMethod();
+
+	}
+
+}

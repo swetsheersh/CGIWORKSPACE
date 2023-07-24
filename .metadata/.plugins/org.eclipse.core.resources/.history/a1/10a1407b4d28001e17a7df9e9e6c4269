@@ -1,0 +1,10 @@
+package tcinterface;
+
+public class TC_InterImpl {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

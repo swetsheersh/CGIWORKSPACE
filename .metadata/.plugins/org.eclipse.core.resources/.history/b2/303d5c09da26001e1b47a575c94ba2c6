@@ -1,0 +1,19 @@
+package cgi_first_project;
+
+public class TC_Iteration {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a=10;
+		while(a>1) {
+			System.out.println("The value is :"+a);
+			a-=1;
+		}
+		int b=10;
+		do {
+			System.out.println("The value is :"+b);
+			a-=1;
+		}while(a>1);
+	}
+
+}

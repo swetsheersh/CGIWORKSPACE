@@ -1,0 +1,12 @@
+package tcinterface;
+
+public interface TC_Interface {
+	public static void print() {
+		System.out.println("interface");
+	}
+	public void show();
+	public default void hi() {
+		System.out.println("hi iam from interface1");
+	}
+	
+}

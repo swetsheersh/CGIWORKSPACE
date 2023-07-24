@@ -1,0 +1,23 @@
+package lab2_1;
+
+import java.util.Random;
+
+public class AccountMethod {
+	private final int MIN_BALANCE=500;
+	public void deposit(int amount) {
+        if (amount > 0) {
+            this.balance += amount;
+        }
+    }
+
+    public void withdraw(int amount,int balance) {
+        if (amount > 0 && balance - amount >= MIN_BALANCE) {
+            balance -= amount;
+        }
+    }
+  //account number 
+  	private String generateAccNum() {
+          Random random = new Random();
+          return String.format("%09d", random.nextInt(1000000000));
+     }
+}

@@ -1,0 +1,8 @@
+package lab2_2;
+
+public class Current {
+	
+	private int overdraftLimit=15;
+	
+	
+}

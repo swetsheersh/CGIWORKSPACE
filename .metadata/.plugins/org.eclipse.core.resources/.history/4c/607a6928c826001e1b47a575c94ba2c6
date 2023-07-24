@@ -1,0 +1,23 @@
+package cgi_first_project;
+
+public class Arthematic_TC {
+
+	public static void main(String[] args) {
+		int a=20;
+		int b=30;
+		int sum=a+b;
+		int sub=b-a;
+		int inc1=a++;
+		int decri = --a;
+		System.out.println("sum is " + sum);
+		System.out.println("sub is "+ sub);
+		System.out.println("mul is "+ a*b);
+		System.out.println("div is "+ a/b);
+		System.out.println("mod is "+a%b);
+		System.out.println("increment of a is "+ inc1);
+		System.out.println("decriment of a is "+ decri);
+		
+
+	}
+
+}

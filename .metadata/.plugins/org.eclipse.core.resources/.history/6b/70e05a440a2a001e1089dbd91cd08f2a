@@ -1,0 +1,37 @@
+package lab2_1;
+
+import java.util.ArrayList;
+
+public class AccountMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<AccountDetail> list=new ArrayList<AccountDetail>();
+		
+		AccountMethod method=new AccountMethod();
+		
+		//smith qAccount creation
+		AccountDetail detail1=new AccountDetail();
+		Person p=new Person();
+		p.setName("smith");
+		p.setAge(18);
+		detail1.setAccHolder(p);
+		detail1.setAccNum(method.generateAccNum());
+		detail1.setBalance(2000);
+		list.add(detail1);
+		
+		//kathy account creation
+		
+		
+		AccountDetail detail2=new AccountDetail();
+		Person p1=new Person();
+		p.setName("kathy");
+		p.setAge(22);
+		detail1.setAccHolder(p1);
+		detail1.setAccNum(method.generateAccNum());
+		detail1.setBalance(3000);
+		list.add(detail1);
+
+	}
+
+}

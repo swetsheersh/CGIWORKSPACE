@@ -1,0 +1,21 @@
+package lab1_10to14;
+
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+
+public class Assig_14 {
+	//method
+	public void timeByZone(String str) {
+		ZoneId zone=ZoneId.of(str);
+		ZonedDateTime time=ZonedDateTime.now(zone);
+		System.out.println("Current time at Zone "+str+" is : "+time);
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Assig_14 obj=new Assig_14();
+		obj.timeByZone("Europe/London");
+		
+	}
+
+}

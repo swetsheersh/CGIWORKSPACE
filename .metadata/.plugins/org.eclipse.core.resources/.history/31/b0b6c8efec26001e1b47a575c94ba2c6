@@ -1,0 +1,5 @@
+package cgi_assignment.constr;
+
+public class Person {
+
+}

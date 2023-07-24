@@ -1,0 +1,7 @@
+//org.eclipse.languageserver.languages.cloudfoundrymanifest/org.springframework.ide.eclipse.manifest.yml=false
+//org.eclipse.languageserver.languages.springboot/org.eclipse.jdt.core.javaSource=false
+//org.eclipse.languageserver.languages.springboot/org.springframework.boot.ide.boot.factories=false
+//org.eclipse.languageserver.languages.springboot/org.springframework.boot.ide.properties.application.properties=false
+//org.eclipse.languageserver.languages.springboot/org.springframework.boot.ide.properties.application.yml=false
+//org.eclipse.languageserver.languages.springboot/org.springframework.boot.ide.xmlconfig=false
+eclipse.preferences.version=1

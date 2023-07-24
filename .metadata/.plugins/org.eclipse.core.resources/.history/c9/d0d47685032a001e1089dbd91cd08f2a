@@ -1,0 +1,42 @@
+package lab2_1;
+
+public class AccountDetail {
+	
+	private String accNum;
+    private String accHolder;
+    private int balance;
+	public String getAccNum() {
+		return accNum;
+	}
+	public void setAccNum(String accNum) {
+		this.accNum = accNum;
+	}
+	public String getAccHolder() {
+		return accHolder;
+	}
+	public void setAccHolder(String accHolder) {
+		this.accHolder = accHolder;
+	}
+	public int getBalance() {
+		return balance;
+	}
+	public void setBalance(int balance) {
+		this.balance = balance;
+	}
+	public AccountDetail() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public AccountDetail(String accNum, String accHolder, int balance) {
+		super();
+		this.accNum = accNum;
+		this.accHolder = accHolder;
+		this.balance = balance;
+	}
+	@Override
+	public String toString() {
+		return "AccountDetail [accNum=" + accNum + ", accHolder=" + accHolder + ", balance=" + balance + "]";
+	}
+    
+    
+}

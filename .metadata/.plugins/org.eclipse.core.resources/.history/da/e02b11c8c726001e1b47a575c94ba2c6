@@ -1,0 +1,16 @@
+package cgi_first_project;
+
+public class Arthematic_TC {
+
+	public static void main(String[] args) {
+		int a=20;
+		int b=30;
+		int sum=a+b;
+		int sub=b-a;
+		System.out.println("sum is " + sum);
+		System.out.println("sub is "+ sub);
+		System.out.println("mul is "+ a*b);
+
+	}
+
+}

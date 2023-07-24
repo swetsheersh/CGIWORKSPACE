@@ -1,0 +1,16 @@
+package junit_test.sampletest;
+
+import static org.junit.Assert.*;
+
+import java.util.Scanner;
+
+import org.junit.Test;
+
+public class TestJunit {
+	@Test
+	public void con() {
+		Scanner scanner=new Scanner(System.in);
+		String str="hello";
+		assertEquals("hello56",str);
+	}
+}

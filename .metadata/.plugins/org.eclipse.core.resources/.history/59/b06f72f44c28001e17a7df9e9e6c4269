@@ -1,0 +1,5 @@
+package tcinterface;
+
+public interface TC_Interface {
+
+}

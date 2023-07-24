@@ -1,0 +1,6 @@
+package junit_test.sampletest;
+public class TestJunit {
+	public String con(String str,String str1) {
+		return str.concat(str1);
+	}
+}

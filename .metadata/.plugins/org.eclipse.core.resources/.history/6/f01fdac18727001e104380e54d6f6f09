@@ -1,0 +1,24 @@
+package cgi_assignment.assign_1_7;
+
+import java.util.Scanner;
+
+public class PersonMain_1_8 {
+
+	public static void main(String[] args) {
+		String fName,lName;
+		char gen;
+		int pn;
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter First Name: ");
+		fName=scanner.nextLine();
+		System.out.println("Enter Last Name: ");
+		lName=scanner.nextLine();
+		do {
+			System.out.println("Enter Gender Either M OR F:");
+			gen=scanner.next().charAt(0);
+		}while();
+		
+
+	}
+
+}

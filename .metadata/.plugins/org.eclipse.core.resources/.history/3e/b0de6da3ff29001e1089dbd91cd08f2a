@@ -1,0 +1,6 @@
+package lab1_1_7;
+
+public enum Gen {
+	  M,
+	  F;
+}

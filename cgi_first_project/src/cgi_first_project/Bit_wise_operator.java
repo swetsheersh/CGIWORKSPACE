@@ -1,0 +1,15 @@
+package cgi_first_project;
+
+public class Bit_wise_operator {
+	public static void main(String[] args) {
+		int  a=21;
+		int b =31;
+		if(a==20 & b==30) {
+			System.out.println("pass");
+		}
+		
+		if(a!=20 & b!=30) {
+			System.out.println("Not pass");
+		}
+	}
+}

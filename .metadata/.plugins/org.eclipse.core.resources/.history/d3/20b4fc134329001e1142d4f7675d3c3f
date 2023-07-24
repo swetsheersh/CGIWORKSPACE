@@ -1,0 +1,46 @@
+package parametrize_test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
+import org.junit.Before;
+import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameter;
+import org.junit.runners.Parameterized.Parameters;
+@RunWith(Parameterized.class)
+public class AdditionTest {
+	public int a;
+	public int b;
+	public int expected;
+	public Addition add1;
+	
+	
+	public AdditionTest(int a, int b, int expected) {
+		super();
+		this.a = a;
+		this.b = b;
+		this.expected = expected;
+	}
+	
+	@Before
+	public void setUp() {
+		add1=new Addition();
+	}
+
+	@Parameters
+	public static Collection input() {
+		return Arrays.asList(new Object[][] {{1,2,3},{11,22,33},
+			{12,13,25},{25,10,40}});
+	}
+	@Test
+	public void addTest() {
+		assertEquals(expected,add.add(a, b));
+	}
+
+}

@@ -1,0 +1,18 @@
+package assignment;
+
+import java.time.LocalDate;
+
+public class Assig_13 {
+	
+	public LocalDate warrenty(LocalDate date,int year,int month) {
+		date=date.plusMonths(month);
+		date=date.plusYears(year);
+		return date;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

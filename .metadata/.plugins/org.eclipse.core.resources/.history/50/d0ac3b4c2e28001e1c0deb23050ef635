@@ -1,0 +1,8 @@
+package assignment;
+
+public class Assig_10 {
+	//method
+	public boolean checkpos(String str) {
+		return true;
+	}
+}
