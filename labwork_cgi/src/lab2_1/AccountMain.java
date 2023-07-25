@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class AccountMain {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception{
 		
 		System.out.println("Lab 2 -> Question No.:1-A");
 		System.out.println("+++++++++++++++++++++++++++");
@@ -19,11 +19,19 @@ public class AccountMain {
 		AccountDetail detail1=new AccountDetail();
 		Person p=new Person();
 		p.setName("smith");
-		p.setAge(18);
+		p.setAge(14);
 		detail1.setAccHolder(p);
 		detail1.setAccNum(method.generateAccNum());
 		detail1.setBalance(2000);
 		map.put("smith", detail1);
+		try {
+			if(detail1.getAccHolder().getAge()<15) {
+				throw new AgeException();
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
 		
 		System.out.println(detail1);
 		System.out.println("--------------------------------------");
