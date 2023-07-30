@@ -1,7 +1,0 @@
-package tcinterface;
-
-public interface TC_Interface {
-	public static void print() {
-		System.out.println("interface");
-	}
-}

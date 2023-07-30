@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="My test suite">
+<test name="testing">
+      
+
+<classes>
+<class name="parametrize_test.AdditionTestng.java" />
+</classes>
+</test>
+</suite>

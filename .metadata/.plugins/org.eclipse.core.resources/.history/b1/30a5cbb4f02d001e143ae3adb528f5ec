@@ -1,0 +1,14 @@
+<project default="test">
+ 
+ 
+ 
+ <taskdef name="testng" 
+          classname="org.testng.TestNGAntTask" />
+ 
+ <target name="test">
+   <testng  groups="fast">
+     <classfileset dir="build" includes="parametrize_test/*.class"/>
+   </testng>
+ </target>
+ 
+</project>
