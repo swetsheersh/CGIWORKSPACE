@@ -12,6 +12,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\HARSH\Desktop\Spring_Aug_7"/>
+			<item value="D:\Projects\Cgi\springBootProj2"/>
 			<item value="D:\Projects\Cgi\july21\july_21_cgiupd"/>
 			<item value="D:\Projects\Cgi\july_21_cgiupd\july_21_code"/>
 			<item value="D:\Projects\Cgi\july_21_cgiupd"/>

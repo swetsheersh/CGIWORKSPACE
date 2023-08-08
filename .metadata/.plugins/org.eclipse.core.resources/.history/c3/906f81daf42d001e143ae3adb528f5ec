@@ -1,8 +1,0 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="TestNG Suite">
-  <test name="Calculator Test">
-    <classes>
-      <class name="com.example.tests.CalculatorTest" />
-    </classes>
-  </test>
-</suite>

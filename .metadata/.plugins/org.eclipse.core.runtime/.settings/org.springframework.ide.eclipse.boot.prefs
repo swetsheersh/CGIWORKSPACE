@@ -1,12 +1,12 @@
 eclipse.preferences.version=1
-org.springframework.ide.eclipse.boot.wizard.PopularityTracker.web=6
-org.springframework.ide.eclipse.boot.wizard.PreferredSelections.artifactId=cgi_1st_springboot
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.web=7
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.artifactId=springBootProj1
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.bootVersion=3.2.0-SNAPSHOT
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.description=Demo project for Spring Boot
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.groupId=com.example
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.javaVersion=17
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.language=java
-org.springframework.ide.eclipse.boot.wizard.PreferredSelections.name=cgi_1st_springboot
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.name=springBootProj1
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.packageName=com.example.demo
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.packaging=jar
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.type=MAVEN
