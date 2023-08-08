@@ -36,6 +36,5 @@
 <uri name="http://www.w3.org/TR/xmldsig-core/xmldsig-core-schema.xsd" uri="jar:file:/C:/Users/HARSH/eclipse/java-2023-06/eclipse/../../../.p2/pool/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar!/xsd/xmldsig-core-schema.xsd"/>
 <uri name="http://www.w3.org/2001/XMLSchema" uri="jar:file:/C:/Users/HARSH/eclipse/java-2023-06/eclipse/../../../.p2/pool/plugins/org.eclipse.xsd_2.19.0.v20230315-1321.jar!/cache/www.w3.org/2001/XMLSchema.xsd"/>
 <system systemId="http://www.w3.org/2001/xml.xsd" uri="jar:file:/C:/Users/HARSH/eclipse/java-2023-06/eclipse/../../../.p2/pool/plugins/org.eclipse.xsd_2.19.0.v20230315-1321.jar!/cache/www.w3.org/2001/xml.xsd"/>
-<public publicId="-//SPRING//DTD BEAN 2.0//EN" uri="jar:file:/C:/Users/HARSH/eclipse/java-2023-06/eclipse/../../../.p2/pool/plugins/org.springframework.beans_4.3.23.20190313-CI.jar!/org/springframework/beans/factory/xml/spring-beans-2.0.dtd"/>
-<public publicId="-//LOG4J//DTD LOG4J//EN" uri="jar:file:/C:/Users/HARSH/eclipse/java-2023-06/eclipse/../../../.p2/pool/plugins/org.springsource.ide.eclipse.commons.ui_4.19.0.202306150731.jar!/dtd/log4j-1.2.dtd"/>
+<public publicId="-//LOG4J//DTD LOG4J//EN" uri="jar:file:/C:/Users/HARSH/eclipse/java-2023-06/eclipse/../../../.p2/pool/plugins/org.springsource.ide.eclipse.commons.ui_4.19.1.202308011907.jar!/dtd/log4j-1.2.dtd"/>
 </catalog>
