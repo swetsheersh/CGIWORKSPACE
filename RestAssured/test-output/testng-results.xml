@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-09T15:01:14 IST" name="Default suite" finished-at="2023-08-09T15:01:21 IST" duration-ms="7349">
+    <groups>
+    </groups>
+    <test started-at="2023-08-09T15:01:14 IST" name="Default test" finished-at="2023-08-09T15:01:21 IST" duration-ms="7349">
+      <class name="com.testing.RestAssured.PatchUpdate">
+        <test-method signature="patchupd()[pri:0, instance:com.testing.RestAssured.PatchUpdate@74e52303]" started-at="2023-08-09T15:01:14 IST" name="patchupd" finished-at="2023-08-09T15:01:18 IST" duration-ms="3677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- patchupd -->
+      </class> <!-- com.testing.RestAssured.PatchUpdate -->
+      <class name="com.testing.RestAssured.PutUser">
+        <test-method signature="f()[pri:0, instance:com.testing.RestAssured.PutUser@6356695f]" started-at="2023-08-09T15:01:18 IST" name="f" finished-at="2023-08-09T15:01:19 IST" duration-ms="605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- com.testing.RestAssured.PutUser -->
+      <class name="com.testing.RestAssured.DeleteUser">
+        <test-method signature="delUser()[pri:0, instance:com.testing.RestAssured.DeleteUser@5ffead27]" started-at="2023-08-09T15:01:18 IST" name="delUser" finished-at="2023-08-09T15:01:18 IST" duration-ms="542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delUser -->
+      </class> <!-- com.testing.RestAssured.DeleteUser -->
+      <class name="com.testing.RestAssured.GetListUser">
+        <test-method signature="getList()[pri:0, instance:com.testing.RestAssured.GetListUser@4f18837a]" started-at="2023-08-09T15:01:19 IST" name="getList" finished-at="2023-08-09T15:01:19 IST" duration-ms="646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getList -->
+      </class> <!-- com.testing.RestAssured.GetListUser -->
+      <class name="com.testing.RestAssured.GetList_BDD">
+        <test-method signature="getListBDD()[pri:0, instance:com.testing.RestAssured.GetList_BDD@359f7cdf]" started-at="2023-08-09T15:01:19 IST" name="getListBDD" finished-at="2023-08-09T15:01:20 IST" duration-ms="1032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getListBDD -->
+      </class> <!-- com.testing.RestAssured.GetList_BDD -->
+      <class name="com.testing.RestAssured.PostUserBDD">
+        <test-method signature="postUser()[pri:0, instance:com.testing.RestAssured.PostUserBDD@1fa268de]" started-at="2023-08-09T15:01:20 IST" name="postUser" finished-at="2023-08-09T15:01:21 IST" duration-ms="735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postUser -->
+      </class> <!-- com.testing.RestAssured.PostUserBDD -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
