@@ -1,6 +1,7 @@
 package com.testing.RestAssured;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;

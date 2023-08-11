@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Aug2023">
+  <test thread-count="5" name="TestAug">
+    <classes>
+      <class name="com.testing.RestAssured.PostUserBDD"/>
+      <class name="com.testing.RestAssured.GetList_BDD"/>
+      <class name="com.testing.RestAssured.AllTest"/>
+      <class name="com.testing.RestAssured.GetListUser"/>
+      <class name="com.testing.RestAssured.DeleteUser"/>
+      <class name="com.testing.RestAssured.PutUser"/>
+      <class name="com.testing.RestAssured.PatchUpdate"/>
+    </classes>
+  </test> <!-- TestAug -->
+</suite> <!-- Suite -->
