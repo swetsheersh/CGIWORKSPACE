@@ -1,0 +1,7 @@
+com\testing\RestAssured\AllTest.class
+com\testing\RestAssured\GetList_BDD.class
+com\testing\RestAssured\PatchUpdate.class
+com\testing\RestAssured\PutUser.class
+com\testing\RestAssured\DeleteUser.class
+com\testing\RestAssured\GetListUser.class
+com\testing\RestAssured\PostUserBDD.class

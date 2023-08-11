@@ -1,47 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-09T15:01:14 IST" name="Default suite" finished-at="2023-08-09T15:01:21 IST" duration-ms="7349">
+  <suite started-at="2023-08-11T10:05:40 IST" name="Aug2023" finished-at="2023-08-11T10:05:50 IST" duration-ms="9667">
     <groups>
     </groups>
-    <test started-at="2023-08-09T15:01:14 IST" name="Default test" finished-at="2023-08-09T15:01:21 IST" duration-ms="7349">
+    <test started-at="2023-08-11T10:05:40 IST" name="TestAug" finished-at="2023-08-11T10:05:50 IST" duration-ms="9667">
       <class name="com.testing.RestAssured.PatchUpdate">
-        <test-method signature="patchupd()[pri:0, instance:com.testing.RestAssured.PatchUpdate@74e52303]" started-at="2023-08-09T15:01:14 IST" name="patchupd" finished-at="2023-08-09T15:01:18 IST" duration-ms="3677" status="PASS">
+        <test-method signature="patchupd()[pri:0, instance:com.testing.RestAssured.PatchUpdate@79924b]" started-at="2023-08-11T10:05:49 IST" name="patchupd" finished-at="2023-08-11T10:05:50 IST" duration-ms="507" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- patchupd -->
       </class> <!-- com.testing.RestAssured.PatchUpdate -->
       <class name="com.testing.RestAssured.PutUser">
-        <test-method signature="f()[pri:0, instance:com.testing.RestAssured.PutUser@6356695f]" started-at="2023-08-09T15:01:18 IST" name="f" finished-at="2023-08-09T15:01:19 IST" duration-ms="605" status="PASS">
+        <test-method signature="f()[pri:0, instance:com.testing.RestAssured.PutUser@4fb0f2b9]" started-at="2023-08-11T10:05:49 IST" name="f" finished-at="2023-08-11T10:05:49 IST" duration-ms="579" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
       </class> <!-- com.testing.RestAssured.PutUser -->
       <class name="com.testing.RestAssured.DeleteUser">
-        <test-method signature="delUser()[pri:0, instance:com.testing.RestAssured.DeleteUser@5ffead27]" started-at="2023-08-09T15:01:18 IST" name="delUser" finished-at="2023-08-09T15:01:18 IST" duration-ms="542" status="PASS">
+        <test-method signature="delUser()[pri:0, instance:com.testing.RestAssured.DeleteUser@4fb61f4a]" started-at="2023-08-11T10:05:48 IST" name="delUser" finished-at="2023-08-11T10:05:49 IST" duration-ms="604" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- delUser -->
       </class> <!-- com.testing.RestAssured.DeleteUser -->
       <class name="com.testing.RestAssured.GetListUser">
-        <test-method signature="getList()[pri:0, instance:com.testing.RestAssured.GetListUser@4f18837a]" started-at="2023-08-09T15:01:19 IST" name="getList" finished-at="2023-08-09T15:01:19 IST" duration-ms="646" status="PASS">
+        <test-method signature="getList()[pri:0, instance:com.testing.RestAssured.GetListUser@3e58a80e]" started-at="2023-08-11T10:05:48 IST" name="getList" finished-at="2023-08-11T10:05:48 IST" duration-ms="230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getList -->
       </class> <!-- com.testing.RestAssured.GetListUser -->
       <class name="com.testing.RestAssured.GetList_BDD">
-        <test-method signature="getListBDD()[pri:0, instance:com.testing.RestAssured.GetList_BDD@359f7cdf]" started-at="2023-08-09T15:01:19 IST" name="getListBDD" finished-at="2023-08-09T15:01:20 IST" duration-ms="1032" status="PASS">
+        <test-method signature="getListBDD()[pri:0, instance:com.testing.RestAssured.GetList_BDD@a514af7]" started-at="2023-08-11T10:05:43 IST" name="getListBDD" finished-at="2023-08-11T10:05:45 IST" duration-ms="1847" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getListBDD -->
       </class> <!-- com.testing.RestAssured.GetList_BDD -->
+      <class name="com.testing.RestAssured.AllTest">
+        <test-method signature="delUserTest()[pri:0, instance:com.testing.RestAssured.AllTest@6b927fb]" started-at="2023-08-11T10:05:45 IST" name="delUserTest" finished-at="2023-08-11T10:05:46 IST" duration-ms="558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delUserTest -->
+        <test-method signature="fTest()[pri:0, instance:com.testing.RestAssured.AllTest@6b927fb]" started-at="2023-08-11T10:05:46 IST" name="fTest" finished-at="2023-08-11T10:05:46 IST" duration-ms="614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fTest -->
+        <test-method signature="getListBDDTest()[pri:0, instance:com.testing.RestAssured.AllTest@6b927fb]" started-at="2023-08-11T10:05:46 IST" name="getListBDDTest" finished-at="2023-08-11T10:05:47 IST" duration-ms="554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getListBDDTest -->
+        <test-method signature="getListTest()[pri:0, instance:com.testing.RestAssured.AllTest@6b927fb]" started-at="2023-08-11T10:05:47 IST" name="getListTest" finished-at="2023-08-11T10:05:47 IST" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getListTest -->
+        <test-method signature="patchupdTest()[pri:0, instance:com.testing.RestAssured.AllTest@6b927fb]" started-at="2023-08-11T10:05:47 IST" name="patchupdTest" finished-at="2023-08-11T10:05:48 IST" duration-ms="570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- patchupdTest -->
+        <test-method signature="postUserTest()[pri:0, instance:com.testing.RestAssured.AllTest@6b927fb]" started-at="2023-08-11T10:05:48 IST" name="postUserTest" finished-at="2023-08-11T10:05:48 IST" duration-ms="537" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postUserTest -->
+      </class> <!-- com.testing.RestAssured.AllTest -->
       <class name="com.testing.RestAssured.PostUserBDD">
-        <test-method signature="postUser()[pri:0, instance:com.testing.RestAssured.PostUserBDD@1fa268de]" started-at="2023-08-09T15:01:20 IST" name="postUser" finished-at="2023-08-09T15:01:21 IST" duration-ms="735" status="PASS">
+        <test-method signature="postUser()[pri:0, instance:com.testing.RestAssured.PostUserBDD@44ebcd03]" started-at="2023-08-11T10:05:40 IST" name="postUser" finished-at="2023-08-11T10:05:43 IST" duration-ms="2709" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postUser -->
       </class> <!-- com.testing.RestAssured.PostUserBDD -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- TestAug -->
+  </suite> <!-- Aug2023 -->
 </testng-results>

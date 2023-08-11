@@ -1,6 +1,7 @@
 package com.testing.RestAssured;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 import com.github.cliftonlabs.json_simple.JsonObject;
 
