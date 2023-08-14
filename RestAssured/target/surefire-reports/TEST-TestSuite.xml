@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="9.951" tests="12" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="9.124" tests="12" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="19"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-19\bin"/>
-    <property name="sun.java.command" value="C:\Users\HARSH\AppData\Local\Temp\surefire14347087056208594794\surefirebooter-20230811152101849_3.jar C:\Users\HARSH\AppData\Local\Temp\surefire14347087056208594794 2023-08-11T15-21-01_503-jvmRun1 surefire-20230811152101849_1tmp surefire_0-20230811152101849_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\HARSH\AppData\Local\Temp\surefire14772686832231118740\surefirebooter-20230814102755938_3.jar C:\Users\HARSH\AppData\Local\Temp\surefire14772686832231118740 2023-08-14T10-27-55_626-jvmRun1 surefire-20230814102755938_1tmp surefire_0-20230814102755938_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\Projects\Cgi\RestAssured\target\test-classes;D:\Projects\Cgi\RestAssured\target\classes;C:\Users\HARSH\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\HARSH\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\HARSH\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\HARSH\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\HARSH\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\HARSH\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\HARSH\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\HARSH\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\HARSH\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\HARSH\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\HARSH\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\HARSH\.m2\repository\org\apache\logging\log4j\log4j-api\2.18.0\log4j-api-2.18.0.jar;C:\Users\HARSH\.m2\repository\com\github\cliftonlabs\json-simple\4.0.1\json-simple-4.0.1.jar;C:\Users\HARSH\.m2\repository\io\rest-assured\rest-assured\5.3.1\rest-assured-5.3.1.jar;C:\Users\HARSH\.m2\repository\org\apache\groovy\groovy\4.0.11\groovy-4.0.11.jar;C:\Users\HARSH\.m2\repository\org\apache\groovy\groovy-xml\4.0.11\groovy-xml-4.0.11.jar;C:\Users\HARSH\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\HARSH\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\HARSH\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\HARSH\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\HARSH\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\HARSH\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\HARSH\.m2\repository\io\rest-assured\json-path\5.3.1\json-path-5.3.1.jar;C:\Users\HARSH\.m2\repository\org\apache\groovy\groovy-json\4.0.11\groovy-json-4.0.11.jar;C:\Users\HARSH\.m2\repository\io\rest-assured\rest-assured-common\5.3.1\rest-assured-common-5.3.1.jar;C:\Users\HARSH\.m2\repository\io\rest-assured\xml-path\5.3.1\xml-path-5.3.1.jar;C:\Users\HARSH\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\HARSH\AppData\Local\Temp\surefire14347087056208594794\surefirebooter-20230811152101849_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\HARSH\AppData\Local\Temp\surefire14772686832231118740\surefirebooter-20230814102755938_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="19.0.2+7-44"/>
@@ -58,20 +58,20 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="postUser" classname="com.testing.RestAssured.PostUserBDD" time="2.89">
+  <testcase name="postUser" classname="com.testing.RestAssured.PostUserBDD" time="2.536">
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="getListBDD" classname="com.testing.RestAssured.GetList_BDD" time="1.51">
+  <testcase name="getListBDD" classname="com.testing.RestAssured.GetList_BDD" time="1.471">
     <system-out><![CDATA[{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://reqres.in/img/faces/1-image.jpg"},{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://reqres.in/img/faces/3-image.jpg"},{"id":4,"email":"eve.holt@reqres.in","first_name":"Eve","last_name":"Holt","avatar":"https://reqres.in/img/faces/4-image.jpg"},{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},{"id":6,"email":"tracey.ramos@reqres.in","first_name":"Tracey","last_name":"Ramos","avatar":"https://reqres.in/img/faces/6-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
 200
 ]]></system-out>
   </testcase>
-  <testcase name="delUserTest" classname="com.testing.RestAssured.AllTest" time="0.584">
+  <testcase name="delUserTest" classname="com.testing.RestAssured.AllTest" time="0.525">
     <system-out><![CDATA[HTTP/1.1 204 No Content
-Date: Fri, 11 Aug 2023 09:51:07 GMT
+Date: Mon, 14 Aug 2023 04:58:20 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Powered-By: Express
@@ -79,88 +79,88 @@ Access-Control-Allow-Origin: *
 Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
 Via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=MT9FsB8LAOrTHYf5IcXcRM9qjUVbvVBaTWposo%2FMQXRvUqXwARE87zogpWZGBQ0ebsW85YuOLUkJpEQea4W0NCzJ09tKKzOsELYhDU9ndIE324WrvWK3idyhxg%3D%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=2bC%2BEUmp6qNxhOhWjr52na76vrp7F8FPTDfioMcqnw3x5PAaHhFiiAisChTbCwhLSWhG5TG93yeaVr9cOBF5QCuudNTanT8mBVwlFYPW5oiFb6XhBkBErC0RjA%3D%3D"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 7f4f9408fb33793b-AMD
+CF-RAY: 7f669f41aeb0a3b1-AMD
 ]]></system-out>
   </testcase>
-  <testcase name="fTest" classname="com.testing.RestAssured.AllTest" time="0.628">
+  <testcase name="fTest" classname="com.testing.RestAssured.AllTest" time="0.483">
     <system-out><![CDATA[HTTP/1.1 200 OK
-Date: Fri, 11 Aug 2023 09:51:08 GMT
+Date: Mon, 14 Aug 2023 04:58:20 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-Etag: W/"49-mhCFnIC4HVp3VzZ81OXAkEcf8Q4"
+Etag: W/"49-ku+HtNMkamEUCEoJtDJZ0CMmy/Y"
 Via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Y%2Fu4fX%2BQRMMPRRrQ%2FTF12MfPKcrHaZnu1%2FHdcMLhUZa0nivVQtR42ywIps%2FzLA3lPg4owfcpM83Kf8tkP%2FvUPtZO6OzDrn6JXMD02G04EX8%2BeJUnlSoI5IFAkQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=za5fQoRq2lPWmmFhxEGwwwE2EhnQhsGXcbfyUo%2FnMu2YaHonua4D%2FA%2BxmPMcmEwC70Tzp%2F3sDg7DuuE3sATaB8NqdMnHjSwf69wQl4GUvrEK74lXuUo5YAwajg%3D%3D"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Vary: Accept-Encoding
 Server: cloudflare
-CF-RAY: 7f4f940c9bcfa3b2-AMD
+CF-RAY: 7f669f44ca99a3b1-AMD
 Content-Encoding: gzip
 
 {
     "name": "hello",
     "job": "developer",
-    "updatedAt": "2023-08-11T09:51:08.481Z"
+    "updatedAt": "2023-08-14T04:58:20.512Z"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="getListBDDTest" classname="com.testing.RestAssured.AllTest" time="0.54">
+  <testcase name="getListBDDTest" classname="com.testing.RestAssured.AllTest" time="0.572">
     <system-out><![CDATA[{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://reqres.in/img/faces/1-image.jpg"},{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://reqres.in/img/faces/3-image.jpg"},{"id":4,"email":"eve.holt@reqres.in","first_name":"Eve","last_name":"Holt","avatar":"https://reqres.in/img/faces/4-image.jpg"},{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},{"id":6,"email":"tracey.ramos@reqres.in","first_name":"Tracey","last_name":"Ramos","avatar":"https://reqres.in/img/faces/6-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
 200
 ]]></system-out>
   </testcase>
-  <testcase name="getListTest" classname="com.testing.RestAssured.AllTest" time="0.275">
+  <testcase name="getListTest" classname="com.testing.RestAssured.AllTest" time="0.211">
     <system-out><![CDATA[status code: 200
-Response Time: 232
+Response Time: 184
 Response Body: {"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
 Header: application/json; charset=utf-8
 Status Line: HTTP/1.1 200 OK
 {"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
 ]]></system-out>
   </testcase>
-  <testcase name="patchupdTest" classname="com.testing.RestAssured.AllTest" time="0.504">
+  <testcase name="patchupdTest" classname="com.testing.RestAssured.AllTest" time="0.453">
     <system-out><![CDATA[HTTP/1.1 200 OK
-Date: Fri, 11 Aug 2023 09:51:10 GMT
+Date: Mon, 14 Aug 2023 04:58:21 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-Etag: W/"37-5ey06AiuqVJzb4+xtdfelIcYRXg"
+Etag: W/"37-zBeqWk1whQ0uDjRmLAF3j6kL0nQ"
 Via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=0pCKB1oRDBF45w1yro8X7X4hSjW7I40Ces5uj4f79tz1eGwfy4HNwfNq%2Ff7K1xEe9Q280JwjIQ8EKlwfGOBWjLS%2FCLiSCVK9QxLD6cJcFfheVIXBfVkIpTf4eQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=wLWHKHaLG9lg8u9ksPpDRFfxJXEDVozJDjiIhQDOvuGweYpAqC78UT75fpy9OxVwHhFSYUJl%2By5Ck8wfVTc4xxG%2BooE98j4wf%2BWyuVuM5bPBTgmLmtG4ILMi6w%3D%3D"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Vary: Accept-Encoding
 Server: cloudflare
-CF-RAY: 7f4f9415b9117937-AMD
+CF-RAY: 7f669f4cad9c7938-AMD
 Content-Encoding: gzip
 
 {
     "name": "hello",
-    "updatedAt": "2023-08-11T09:51:09.955Z"
+    "updatedAt": "2023-08-14T04:58:21.764Z"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="postUserTest" classname="com.testing.RestAssured.AllTest" time="0.529"/>
-  <testcase name="getList" classname="com.testing.RestAssured.GetListUser" time="0.177">
+  <testcase name="postUserTest" classname="com.testing.RestAssured.AllTest" time="0.477"/>
+  <testcase name="getList" classname="com.testing.RestAssured.GetListUser" time="0.206">
     <system-out><![CDATA[status code: 200
-Response Time: 166
+Response Time: 193
 Response Body: {"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
 Header: application/json; charset=utf-8
 Status Line: HTTP/1.1 200 OK
 {"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
 ]]></system-out>
   </testcase>
-  <testcase name="delUser" classname="com.testing.RestAssured.DeleteUser" time="0.439">
+  <testcase name="delUser" classname="com.testing.RestAssured.DeleteUser" time="0.513">
     <system-out><![CDATA[HTTP/1.1 204 No Content
-Date: Fri, 11 Aug 2023 09:51:11 GMT
+Date: Mon, 14 Aug 2023 04:58:23 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Powered-By: Express
@@ -168,58 +168,58 @@ Access-Control-Allow-Origin: *
 Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
 Via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=fd1JKpD2Xx3sgJXhicaA%2Fwnm3%2F2XpGKs68kznnnyPCwnYacpPlQt9jKX44TJlKxji7QjOgNsLbUD4ZGREsB03Xp%2FUeXNaKrxdZx7BGFffqARNAksauq5soVARw%3D%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=wL%2FEaaQ5Si6sEN38c5faPdj1gFsXfgPxrBuWPj8c0y488MIciTyTC0MuhQ1K3nI%2Bf3X%2B97b2xCnMQwjQDcwxrCVh9Ium5ZjgsnWi06vAYwR0QYB%2Bl%2FibY8X6fA%3D%3D"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 7f4f941d48a67956-AMD
+CF-RAY: 7f669f53bbbe795d-AMD
 ]]></system-out>
   </testcase>
-  <testcase name="f" classname="com.testing.RestAssured.PutUser" time="0.584">
+  <testcase name="f" classname="com.testing.RestAssured.PutUser" time="0.506">
     <system-out><![CDATA[HTTP/1.1 200 OK
-Date: Fri, 11 Aug 2023 09:51:11 GMT
+Date: Mon, 14 Aug 2023 04:58:23 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-Etag: W/"49-F5oy2gYnCpLzLbg063cRTebkE08"
+Etag: W/"49-OpYgtMY2qmHDDt2VzM227fzA4zU"
 Via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=QMQXvlb8NEswvQ1mCR5upU70bMPtOddniAeSpl%2FpGwIx6sKWkdOGxG47FPTm86RK6u7HFYAs%2FzOZR6nSwfecbOrwmWZRn7XH05hMtvgtuS6BvyRS4JiCc3yysQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=HiR4O%2F7BBtPPrlBz6lcVMHAmOCWmKbtVO7mrPS%2BW6%2Bn%2F8YpRKLutfuhhccGTBqba2x2Sxv8unFW47C6cU4jUdBWA6OUGHaLOTl63SJqWxGxrReF24sMygaDJHQ%3D%3D"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Vary: Accept-Encoding
 Server: cloudflare
-CF-RAY: 7f4f942018297943-AMD
+CF-RAY: 7f669f56ff017957-AMD
 Content-Encoding: gzip
 
 {
     "name": "hello",
     "job": "developer",
-    "updatedAt": "2023-08-11T09:51:11.593Z"
+    "updatedAt": "2023-08-14T04:58:23.438Z"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="patchupd" classname="com.testing.RestAssured.PatchUpdate" time="0.5">
+  <testcase name="patchupd" classname="com.testing.RestAssured.PatchUpdate" time="0.51">
     <system-out><![CDATA[HTTP/1.1 200 OK
-Date: Fri, 11 Aug 2023 09:51:12 GMT
+Date: Mon, 14 Aug 2023 04:58:24 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-Etag: W/"37-j59GU6JKFSp9yBwQGG0a5oe8qPU"
+Etag: W/"37-z+TolAKUJrt5qbUtoTRJ1k3EPCY"
 Via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=riUEGUFnv6pp3gnd5KJfvJyXzQzhsdXRBIiZUbXUUUoun2QjTCKzF5tgZRP2rP9cZwBdUuehmMo5cb4%2FXMPvvoaB5%2FggDcel7YJajjJ4M0dT2biiE4i8ab%2FX9g%3D%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=xrYXdawc4ftA59SU3qncVHyJ3vBfoV79xp6oPQxcgNJY%2F0Fp7MiS6AMT1UZB%2F46SN9GQJg3v2%2Bqe3r%2F5sZ6Ljc9LLezloX7Wq9Ylw19a4eTFk%2FI3wCxX5gAukQ%3D%3D"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Vary: Accept-Encoding
 Server: cloudflare
-CF-RAY: 7f4f9423ea6fa3b7-AMD
+CF-RAY: 7f669f5a2ce7793b-AMD
 Content-Encoding: gzip
 
 {
     "name": "hello",
-    "updatedAt": "2023-08-11T09:51:12.199Z"
+    "updatedAt": "2023-08-14T04:58:23.950Z"
 }
 ]]></system-out>
   </testcase>

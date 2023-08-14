@@ -1,0 +1,49 @@
+pipeline {
+    agent any
+
+    stages {
+       stage('Clean') {
+            steps {
+                dir("C:\\Users\\HARSH\\Desktop\\re\\CGIWORKSPACE\\RestAssured") {
+                    echo 'Cleaning workspace...'
+                    // Add any clean-up steps you need here
+                    bat 'rd /s /q target'
+                }
+            }
+        } 
+        
+        stage('Compile') {
+            steps {
+                dir("C:\\Users\\HARSH\\Desktop\\re\\CGIWORKSPACE\\RestAssured") {
+                    echo 'Compiling...'
+                    bat 'mvn compile' // Use "bat" for Windows batch commands
+                }
+            }
+        }
+        
+        stage('Test') {
+            steps {
+                dir("C:\\Users\\HARSH\\Desktop\\re\\CGIWORKSPACE\\RestAssured") {
+                    echo 'Running tests...'
+                    bat 'mvn test' // Use "bat" for Windows batch commands
+                }
+            }
+        }
+        
+        stage('Package') {
+            steps {
+                dir("C:\\Users\\HARSH\\Desktop\\re\\CGIWORKSPACE\\RestAssured") {
+                    echo 'Packaging...'
+                    bat 'mvn package' // Use "bat" for Windows batch commands
+                }
+            }
+        }
+    }
+    
+    post {
+        always {
+            echo 'Pipeline completed.'
+        }
+    }
+}
+
