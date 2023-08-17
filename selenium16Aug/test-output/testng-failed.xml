@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testing.Techlistic">
+      <class name="com.testing.asign2.Assign2">
         <methods>
-          <include name="f"/>
+          <include name="first"/>
+          <include name="empadd"/>
         </methods>
-      </class> <!-- com.testing.Techlistic -->
+      </class> <!-- com.testing.asign2.Assign2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
