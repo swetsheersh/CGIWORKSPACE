@@ -6,7 +6,7 @@
       <class name="com.testing.asign2.Assign2">
         <methods>
           <include name="first"/>
-          <include name="empadd"/>
+          <include name="f"/>
         </methods>
       </class> <!-- com.testing.asign2.Assign2 -->
     </classes>

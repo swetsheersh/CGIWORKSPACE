@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-17T19:00:56 IST" name="Default suite" finished-at="2023-08-17T19:05:12 IST" duration-ms="256116">
+  <suite started-at="2023-08-18T14:54:51 IST" name="Default suite" finished-at="2023-08-18T14:56:24 IST" duration-ms="92965">
     <groups>
     </groups>
-    <test started-at="2023-08-17T19:00:56 IST" name="Default test" finished-at="2023-08-17T19:05:12 IST" duration-ms="256116">
+    <test started-at="2023-08-18T14:54:51 IST" name="Default test" finished-at="2023-08-18T14:56:24 IST" duration-ms="92965">
       <class name="com.testing.asign2.Assign2">
-        <test-method is-config="true" signature="first()[pri:0, instance:com.testing.asign2.Assign2@1bb5a082]" started-at="2023-08-17T19:00:56 IST" name="first" finished-at="2023-08-17T19:00:58 IST" duration-ms="2183" status="PASS">
+        <test-method is-config="true" signature="first()[pri:0, instance:com.testing.asign2.Assign2@1bb5a082]" started-at="2023-08-18T14:54:51 IST" name="first" finished-at="2023-08-18T14:54:53 IST" duration-ms="2150" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- first -->
-        <test-method signature="empadd()[pri:0, instance:com.testing.asign2.Assign2@1bb5a082]" started-at="2023-08-17T19:00:58 IST" name="empadd" finished-at="2023-08-17T19:01:56 IST" duration-ms="58433" status="PASS">
+        <test-method signature="empadd()[pri:0, instance:com.testing.asign2.Assign2@1bb5a082]" started-at="2023-08-18T14:54:53 IST" name="empadd" finished-at="2023-08-18T14:55:37 IST" duration-ms="44366" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- empadd -->
-        <test-method is-config="true" signature="first()[pri:0, instance:com.testing.asign2.Assign2@1bb5a082]" started-at="2023-08-17T19:01:56 IST" name="first" finished-at="2023-08-17T19:01:57 IST" duration-ms="1188" status="PASS">
+        <test-method is-config="true" signature="first()[pri:0, instance:com.testing.asign2.Assign2@1bb5a082]" started-at="2023-08-18T14:55:37 IST" name="first" finished-at="2023-08-18T14:55:38 IST" duration-ms="1040" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- first -->
-        <test-method signature="f()[pri:1, instance:com.testing.asign2.Assign2@1bb5a082]" started-at="2023-08-17T19:01:57 IST" name="f" finished-at="2023-08-17T19:03:17 IST" duration-ms="79278" status="PASS">
+        <test-method signature="f()[pri:1, instance:com.testing.asign2.Assign2@1bb5a082]" started-at="2023-08-18T14:55:38 IST" name="f" finished-at="2023-08-18T14:56:09 IST" duration-ms="30673" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method is-config="true" signature="first()[pri:0, instance:com.testing.asign2.Assign2@1bb5a082]" started-at="2023-08-17T19:03:17 IST" name="first" finished-at="2023-08-17T19:03:18 IST" duration-ms="1094" status="PASS">
+        <test-method is-config="true" signature="first()[pri:0, instance:com.testing.asign2.Assign2@1bb5a082]" started-at="2023-08-18T14:56:09 IST" name="first" finished-at="2023-08-18T14:56:10 IST" duration-ms="1024" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- first -->
-        <test-method signature="logout()[pri:2, instance:com.testing.asign2.Assign2@1bb5a082]" started-at="2023-08-17T19:03:18 IST" name="logout" finished-at="2023-08-17T19:05:12 IST" duration-ms="113882" status="PASS">
+        <test-method signature="logout()[pri:2, instance:com.testing.asign2.Assign2@1bb5a082]" started-at="2023-08-18T14:56:10 IST" name="logout" finished-at="2023-08-18T14:56:24 IST" duration-ms="13659" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
