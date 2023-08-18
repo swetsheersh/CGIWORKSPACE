@@ -45,13 +45,13 @@ public class Assign2 {
 			  Thread.sleep(3000);
 			  String txt=uname.getAttribute("class");
 			  Thread.sleep(2000);
-			  assertEquals("oxd-input oxd-input--focus oxd-input--error", txt);
+			  assertEquals(txt,"oxd-input oxd-input--focus oxd-input--error");
 			  //blank pass
 			  uname.sendKeys("Test");
 			  login.submit();
 			  Thread.sleep(3000);
 			  String txt1=pass.getAttribute("class");
-			  assertEquals("oxd-input oxd-input--active oxd-input--error", txt1);
+			  assertEquals(txt1,"oxd-input oxd-input--active oxd-input--error");
 			  Thread.sleep(2000);
 			  //blank username
 			  driver.navigate().refresh();
@@ -68,7 +68,7 @@ public class Assign2 {
 			  Thread.sleep(3000);
 			  String txt2=uname.getAttribute("class");
 			  Thread.sleep(2000);
-			  assertEquals("oxd-input oxd-input--active oxd-input--error", txt2);
+			  assertEquals(txt2,"oxd-input oxd-input--active oxd-input--error");
 			  
 			  
 			  //invalid username and password
@@ -76,7 +76,7 @@ public class Assign2 {
 			  uname.sendKeys("Test");
 			  login.submit();
 			  String msg=driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/div/div[1]/div[1]/p")).getText();
-			  assertEquals("Invalid credentials", msg);
+			  assertEquals(msg,"Invalid credentials");
 			  
 			  //valid username and password
 			  
@@ -91,7 +91,7 @@ public class Assign2 {
 			  login.submit();
 			  Thread.sleep(2000);
 			  assertEquals("OrangeHRM", driver.getTitle());
-			  assertEquals("https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index", driver.getCurrentUrl());
+			  assertEquals(driver.getCurrentUrl(),"https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index");
 		} finally {
 			driver.quit();
 		}
@@ -117,7 +117,7 @@ public class Assign2 {
 			  Thread.sleep(1000);
 			  driver.findElement(By.linkText("Logout")).click();
 			  Thread.sleep(3000);
-			  assertEquals("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login", driver.getCurrentUrl());
+			  assertEquals(driver.getCurrentUrl(),"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		} finally {
 			driver.quit();
 		}
@@ -187,7 +187,7 @@ public class Assign2 {
 			  
 			  driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[3]/button[2]")).submit();
 			  Thread.sleep(Duration.ofSeconds(10));
-			  assertEquals("https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers", driver.getCurrentUrl());
+			  assertEquals(driver.getCurrentUrl(),"https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers");
 			  Thread.sleep(2000);
 		} finally {
 			driver.quit();
