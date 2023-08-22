@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 19
+Implementation-Title: maincourse_java_jfse_mc05_publish_docker_image_to_
+ docker_hub_exercise_solution
+Implementation-Version: 0.0.1-SNAPSHOT
+Created-By: Maven Integration for Eclipse
+
