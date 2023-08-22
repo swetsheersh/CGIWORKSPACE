@@ -7,7 +7,7 @@
         <methods>
           <include name="beforeMethod"/>
           <include name="beforeSuite"/>
-          <include name="verifyRegister"/>
+          <include name="verifyRegister" invocation-numbers="6 7"/>
           <include name="afterSuite"/>
         </methods>
       </class> <!-- SeleniumPOM.Assign.PageObjectModel.RegisterTest -->
