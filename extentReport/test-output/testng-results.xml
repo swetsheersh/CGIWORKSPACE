@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-23T16:23:08 IST" name="Default suite" finished-at="2023-08-23T16:24:49 IST" duration-ms="100087">
+    <groups>
+    </groups>
+    <test started-at="2023-08-23T16:23:08 IST" name="Default test" finished-at="2023-08-23T16:24:49 IST" duration-ms="100087">
+      <class name="com.testing.asign2.Assign2">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-23T16:23:09 IST" name="beforeTest" finished-at="2023-08-23T16:23:09 IST" duration-ms="553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="first()[pri:0, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-23T16:23:09 IST" name="first" finished-at="2023-08-23T16:23:13 IST" duration-ms="3995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- first -->
+        <test-method signature="empadd()[pri:0, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-23T16:23:13 IST" name="empadd" finished-at="2023-08-23T16:23:56 IST" duration-ms="43248" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers] but found [https://opensource-demo.orangehrmlive.com/web/index.php/admin/saveSystemUser]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers] but found [https://opensource-demo.orangehrmlive.com/web/index.php/admin/saveSystemUser]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.testing.asign2.Assign2.empadd(Assign2.java:277)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- empadd -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-23T16:23:56 IST" name="tearDown" finished-at="2023-08-23T16:23:57 IST" duration-ms="779" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=empadd status=FAILURE method=Assign2.empadd()[pri:0, instance:com.testing.asign2.Assign2@dd05255] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="first()[pri:0, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-23T16:23:57 IST" name="first" finished-at="2023-08-23T16:23:59 IST" duration-ms="1509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- first -->
+        <test-method signature="login()[pri:1, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-23T16:23:59 IST" name="login" finished-at="2023-08-23T16:24:32 IST" duration-ms="33266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-23T16:24:32 IST" name="tearDown" finished-at="2023-08-23T16:24:32 IST" duration-ms="311" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=Assign2.login()[pri:1, instance:com.testing.asign2.Assign2@dd05255] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="first()[pri:0, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-23T16:24:32 IST" name="first" finished-at="2023-08-23T16:24:34 IST" duration-ms="1498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- first -->
+        <test-method signature="logout()[pri:2, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-23T16:24:34 IST" name="logout" finished-at="2023-08-23T16:24:47 IST" duration-ms="13592" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-23T16:24:47 IST" name="tearDown" finished-at="2023-08-23T16:24:48 IST" duration-ms="372" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=logout status=SUCCESS method=Assign2.logout()[pri:2, instance:com.testing.asign2.Assign2@dd05255] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-23T16:24:48 IST" name="afterTest" finished-at="2023-08-23T16:24:49 IST" duration-ms="849" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.testing.asign2.Assign2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

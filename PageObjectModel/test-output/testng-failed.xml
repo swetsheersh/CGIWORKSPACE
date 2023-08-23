@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumPOM.Assign.PageObjectModel.RegisterTest">
+      <class name="SeleniumPOM.Assign.PageObjectModel.FacebookTest">
         <methods>
           <include name="beforeMethod"/>
-          <include name="beforeSuite"/>
-          <include name="verifyRegister" invocation-numbers="6 7"/>
+          <include name="verifyRegister"/>
           <include name="afterSuite"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="beforeSuite"/>
         </methods>
-      </class> <!-- SeleniumPOM.Assign.PageObjectModel.RegisterTest -->
+      </class> <!-- SeleniumPOM.Assign.PageObjectModel.FacebookTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

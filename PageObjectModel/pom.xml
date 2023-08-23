@@ -57,5 +57,13 @@
 	    <artifactId>webdriver-selenium</artifactId>
 	    <version>0.9.7376</version>
 	</dependency>
+	<!-- Extent Reports -->
+	
+	<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+	<dependency>
+	    <groupId>com.aventstack</groupId>
+	    <artifactId>extentreports</artifactId>
+	    <version>5.1.0</version>
+	</dependency>
   </dependencies>
 </project>
