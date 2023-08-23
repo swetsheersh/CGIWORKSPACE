@@ -12,6 +12,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\HARSH\Desktop\extentReport"/>
+			<item value="D:\Projects\Cgi\extentReport"/>
+			<item value="D:\Projects\Cgi\RestAssured Assesment 22 Aug\core-wave2-automation-immersive-aug22"/>
 			<item value="C:\Users\HARSH\Desktop\RestAssured Assesment 22 Aug\core-wave2-automation-immersive-aug22"/>
 			<item value="D:\Projects\Cgi\docker-assignment-i"/>
 			<item value="D:\Projects\Cgi\customer"/>

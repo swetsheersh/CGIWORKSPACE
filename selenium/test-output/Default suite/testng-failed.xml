@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testing.selenium.excellfile.NewTest">
+      <class name="com.testing.selenium.data_from_xml.NewTest">
         <methods>
-          <include name="afterMethod"/>
           <include name="beforeMethod"/>
           <include name="f"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.testing.selenium.excellfile.NewTest -->
+      </class> <!-- com.testing.selenium.data_from_xml.NewTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

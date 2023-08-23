@@ -1,21 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="7" failed="2" skipped="0">
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-22T14:16:43 IST" name="Default suite" finished-at="2023-08-22T14:19:27 IST" duration-ms="163409">
+  <suite started-at="2023-08-23T15:48:54 IST" name="Default suite" finished-at="2023-08-23T15:51:32 IST" duration-ms="157727">
     <groups>
     </groups>
-    <test started-at="2023-08-22T14:16:43 IST" name="Default test" finished-at="2023-08-22T14:19:27 IST" duration-ms="163409">
-      <class name="SeleniumPOM.Assign.PageObjectModel.RegisterTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.RegisterTest@c730b35]" started-at="2023-08-22T14:16:37 IST" name="beforeSuite" finished-at="2023-08-22T14:16:43 IST" duration-ms="5661" status="PASS">
+    <test started-at="2023-08-23T15:48:54 IST" name="Default test" finished-at="2023-08-23T15:51:32 IST" duration-ms="157727">
+      <class name="SeleniumPOM.Assign.PageObjectModel.FacebookTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:48:46 IST" name="beforeSuite" finished-at="2023-08-23T15:48:54 IST" duration-ms="7926" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.RegisterTest@c730b35]" started-at="2023-08-22T14:16:44 IST" name="beforeMethod" finished-at="2023-08-22T14:16:44 IST" duration-ms="53" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:48:54 IST" name="beforeTest" finished-at="2023-08-23T15:48:54 IST" duration-ms="458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:48:56 IST" name="beforeMethod" finished-at="2023-08-23T15:48:56 IST" duration-ms="62" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.RegisterTest@c730b35]" started-at="2023-08-22T14:16:44 IST" name="verifyRegister" data-provider="dp" finished-at="2023-08-22T14:16:58 IST" duration-ms="13767" status="PASS">
+        <test-method signature="forgetTest(java.lang.String,java.lang.String)[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:48:56 IST" name="forgetTest" data-provider="dp2" finished-at="2023-08-23T15:49:06 IST" duration-ms="9613" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[saurav.gautam@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TRUE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgetTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:49:06 IST" name="tearDown" finished-at="2023-08-23T15:49:06 IST" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=forgetTest status=SUCCESS method=FacebookTest.forgetTest(java.lang.String,java.lang.String)[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:49:06 IST" name="beforeMethod" finished-at="2023-08-23T15:49:06 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="forgetTest(java.lang.String,java.lang.String)[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:49:06 IST" name="forgetTest" data-provider="dp2" finished-at="2023-08-23T15:49:15 IST" duration-ms="9299" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Terst@Test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FALSE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgetTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:49:15 IST" name="tearDown" finished-at="2023-08-23T15:49:15 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=forgetTest status=SUCCESS method=FacebookTest.forgetTest(java.lang.String,java.lang.String)[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:49:15 IST" name="beforeMethod" finished-at="2023-08-23T15:49:15 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:49:15 IST" name="loginTest" data-provider="dp1" finished-at="2023-08-23T15:49:22 IST" duration-ms="7134" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[FALSE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:49:22 IST" name="tearDown" finished-at="2023-08-23T15:49:22 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=FacebookTest.loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:49:22 IST" name="beforeMethod" finished-at="2023-08-23T15:49:22 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:49:22 IST" name="loginTest" data-provider="dp1" finished-at="2023-08-23T15:49:29 IST" duration-ms="7026" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test12]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@589]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[FALSE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:49:29 IST" name="tearDown" finished-at="2023-08-23T15:49:29 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=FacebookTest.loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:49:29 IST" name="beforeMethod" finished-at="2023-08-23T15:49:29 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:49:29 IST" name="verifyRegister" data-provider="dp" finished-at="2023-08-23T15:49:43 IST" duration-ms="13911" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -71,11 +209,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegister -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.RegisterTest@c730b35]" started-at="2023-08-22T14:16:58 IST" name="beforeMethod" finished-at="2023-08-22T14:16:58 IST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:49:43 IST" name="tearDown" finished-at="2023-08-23T15:49:43 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyRegister status=SUCCESS method=FacebookTest.verifyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:49:43 IST" name="beforeMethod" finished-at="2023-08-23T15:49:43 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.RegisterTest@c730b35]" started-at="2023-08-22T14:16:58 IST" name="verifyRegister" data-provider="dp" finished-at="2023-08-22T14:17:11 IST" duration-ms="13214" status="PASS">
+        <test-method signature="verifyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:49:43 IST" name="verifyRegister" data-provider="dp" finished-at="2023-08-23T15:49:57 IST" duration-ms="13419" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -131,11 +280,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegister -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.RegisterTest@c730b35]" started-at="2023-08-22T14:17:11 IST" name="beforeMethod" finished-at="2023-08-22T14:17:11 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:49:57 IST" name="tearDown" finished-at="2023-08-23T15:49:57 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyRegister status=SUCCESS method=FacebookTest.verifyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:49:57 IST" name="beforeMethod" finished-at="2023-08-23T15:49:57 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.RegisterTest@c730b35]" started-at="2023-08-22T14:17:11 IST" name="verifyRegister" data-provider="dp" finished-at="2023-08-22T14:17:25 IST" duration-ms="13253" status="PASS">
+        <test-method signature="verifyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:49:57 IST" name="verifyRegister" data-provider="dp" finished-at="2023-08-23T15:50:10 IST" duration-ms="13443" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -191,11 +351,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegister -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.RegisterTest@c730b35]" started-at="2023-08-22T14:17:25 IST" name="beforeMethod" finished-at="2023-08-22T14:17:25 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:50:10 IST" name="tearDown" finished-at="2023-08-23T15:50:10 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyRegister status=SUCCESS method=FacebookTest.verifyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:50:10 IST" name="beforeMethod" finished-at="2023-08-23T15:50:10 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.RegisterTest@c730b35]" started-at="2023-08-22T14:17:25 IST" name="verifyRegister" data-provider="dp" finished-at="2023-08-22T14:17:38 IST" duration-ms="13410" status="PASS">
+        <test-method signature="verifyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:50:10 IST" name="verifyRegister" data-provider="dp" finished-at="2023-08-23T15:50:24 IST" duration-ms="13649" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -251,11 +422,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegister -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.RegisterTest@c730b35]" started-at="2023-08-22T14:17:38 IST" name="beforeMethod" finished-at="2023-08-22T14:17:38 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:50:24 IST" name="tearDown" finished-at="2023-08-23T15:50:24 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyRegister status=SUCCESS method=FacebookTest.verifyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:50:24 IST" name="beforeMethod" finished-at="2023-08-23T15:50:24 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.RegisterTest@c730b35]" started-at="2023-08-22T14:17:38 IST" name="verifyRegister" data-provider="dp" finished-at="2023-08-22T14:17:51 IST" duration-ms="13124" status="PASS">
+        <test-method signature="verifyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:50:24 IST" name="verifyRegister" data-provider="dp" finished-at="2023-08-23T15:50:37 IST" duration-ms="13438" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -311,11 +493,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegister -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.RegisterTest@c730b35]" started-at="2023-08-22T14:17:51 IST" name="beforeMethod" finished-at="2023-08-22T14:17:51 IST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:50:37 IST" name="tearDown" finished-at="2023-08-23T15:50:37 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyRegister status=SUCCESS method=FacebookTest.verifyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:50:37 IST" name="beforeMethod" finished-at="2023-08-23T15:50:37 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.RegisterTest@c730b35]" started-at="2023-08-22T14:17:51 IST" name="verifyRegister" data-provider="dp" finished-at="2023-08-22T14:18:04 IST" duration-ms="13139" status="PASS">
+        <test-method signature="verifyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:50:37 IST" name="verifyRegister" data-provider="dp" finished-at="2023-08-23T15:50:51 IST" duration-ms="13428" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -371,11 +564,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegister -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.RegisterTest@c730b35]" started-at="2023-08-22T14:18:04 IST" name="beforeMethod" finished-at="2023-08-22T14:18:04 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:50:51 IST" name="tearDown" finished-at="2023-08-23T15:50:51 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyRegister status=SUCCESS method=FacebookTest.verifyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:50:51 IST" name="beforeMethod" finished-at="2023-08-23T15:50:51 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.RegisterTest@c730b35]" started-at="2023-08-22T14:18:04 IST" name="verifyRegister" data-provider="dp" finished-at="2023-08-22T14:18:44 IST" duration-ms="39410" status="FAIL">
+        <test-method signature="verifyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:50:51 IST" name="verifyRegister" data-provider="dp" finished-at="2023-08-23T15:51:04 IST" duration-ms="13378" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -428,57 +632,25 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1067)
-at org.testng.Assert.assertEquals(Assert.java:1031)
-at org.testng.Assert.assertEquals(Assert.java:1077)
-at SeleniumPOM.Assign.PageObjectModel.RegisterTest.verifyRegister(RegisterTest.java:49)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegister -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.RegisterTest@c730b35]" started-at="2023-08-22T14:18:44 IST" name="beforeMethod" finished-at="2023-08-22T14:18:44 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:51:04 IST" name="tearDown" finished-at="2023-08-23T15:51:04 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyRegister status=SUCCESS method=FacebookTest.verifyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:51:04 IST" name="beforeMethod" finished-at="2023-08-23T15:51:04 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.RegisterTest@c730b35]" started-at="2023-08-22T14:18:44 IST" name="verifyRegister" data-provider="dp" finished-at="2023-08-22T14:19:11 IST" duration-ms="27626" status="FAIL">
+        <test-method signature="verifyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:51:04 IST" name="verifyRegister" data-provider="dp" finished-at="2023-08-23T15:51:18 IST" duration-ms="13439" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -531,57 +703,25 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1067)
-at org.testng.Assert.assertEquals(Assert.java:1031)
-at org.testng.Assert.assertEquals(Assert.java:1077)
-at SeleniumPOM.Assign.PageObjectModel.RegisterTest.verifyRegister(RegisterTest.java:49)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegister -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.RegisterTest@c730b35]" started-at="2023-08-22T14:19:11 IST" name="beforeMethod" finished-at="2023-08-22T14:19:11 IST" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:51:18 IST" name="tearDown" finished-at="2023-08-23T15:51:18 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyRegister status=SUCCESS method=FacebookTest.verifyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:51:18 IST" name="beforeMethod" finished-at="2023-08-23T15:51:18 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.RegisterTest@c730b35]" started-at="2023-08-22T14:19:11 IST" name="verifyRegister" data-provider="dp" finished-at="2023-08-22T14:19:27 IST" duration-ms="15186" status="PASS">
+        <test-method signature="verifyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:51:18 IST" name="verifyRegister" data-provider="dp" finished-at="2023-08-23T15:51:31 IST" duration-ms="13361" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -637,11 +777,26 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegister -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.RegisterTest@c730b35]" started-at="2023-08-22T14:19:27 IST" name="afterSuite" finished-at="2023-08-22T14:19:27 IST" duration-ms="259" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:51:31 IST" name="tearDown" finished-at="2023-08-23T15:51:31 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyRegister status=SUCCESS method=FacebookTest.verifyRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:51:31 IST" name="afterTest" finished-at="2023-08-23T15:51:32 IST" duration-ms="601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f]" started-at="2023-08-23T15:51:32 IST" name="afterSuite" finished-at="2023-08-23T15:51:32 IST" duration-ms="463" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- SeleniumPOM.Assign.PageObjectModel.RegisterTest -->
+      </class> <!-- SeleniumPOM.Assign.PageObjectModel.FacebookTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
