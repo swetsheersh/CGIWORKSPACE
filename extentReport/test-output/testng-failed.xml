@@ -8,8 +8,8 @@
           <include name="afterTest"/>
           <include name="beforeTest"/>
           <include name="first"/>
-          <include name="empadd"/>
           <include name="tearDown"/>
+          <include name="logout"/>
         </methods>
       </class> <!-- com.testing.asign2.Assign2 -->
     </classes>

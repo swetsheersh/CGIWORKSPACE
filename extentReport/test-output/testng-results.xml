@@ -2,33 +2,95 @@
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-23T16:23:08 IST" name="Default suite" finished-at="2023-08-23T16:24:49 IST" duration-ms="100087">
+  <suite started-at="2023-08-24T10:17:31 IST" name="Default suite" finished-at="2023-08-24T10:19:27 IST" duration-ms="116256">
     <groups>
     </groups>
-    <test started-at="2023-08-23T16:23:08 IST" name="Default test" finished-at="2023-08-23T16:24:49 IST" duration-ms="100087">
+    <test started-at="2023-08-24T10:17:31 IST" name="Default test" finished-at="2023-08-24T10:19:27 IST" duration-ms="116256">
       <class name="com.testing.asign2.Assign2">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-23T16:23:09 IST" name="beforeTest" finished-at="2023-08-23T16:23:09 IST" duration-ms="553" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-24T10:17:31 IST" name="beforeTest" finished-at="2023-08-24T10:17:32 IST" duration-ms="574" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="first()[pri:0, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-23T16:23:09 IST" name="first" finished-at="2023-08-23T16:23:13 IST" duration-ms="3995" status="PASS">
+        <test-method is-config="true" signature="first()[pri:0, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-24T10:17:32 IST" name="first" finished-at="2023-08-24T10:17:36 IST" duration-ms="3912" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- first -->
-        <test-method signature="empadd()[pri:0, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-23T16:23:13 IST" name="empadd" finished-at="2023-08-23T16:23:56 IST" duration-ms="43248" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="empadd()[pri:0, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-24T10:17:36 IST" name="empadd" finished-at="2023-08-24T10:18:22 IST" duration-ms="46473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- empadd -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-24T10:18:22 IST" name="tearDown" finished-at="2023-08-24T10:18:25 IST" duration-ms="2822" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=empadd status=SUCCESS method=Assign2.empadd()[pri:0, instance:com.testing.asign2.Assign2@dd05255] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="first()[pri:0, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-24T10:18:25 IST" name="first" finished-at="2023-08-24T10:18:27 IST" duration-ms="2356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- first -->
+        <test-method signature="login()[pri:1, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-24T10:18:27 IST" name="login" finished-at="2023-08-24T10:19:00 IST" duration-ms="32513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-24T10:19:00 IST" name="tearDown" finished-at="2023-08-24T10:19:00 IST" duration-ms="493" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=Assign2.login()[pri:1, instance:com.testing.asign2.Assign2@dd05255] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="first()[pri:0, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-24T10:19:00 IST" name="first" finished-at="2023-08-24T10:19:03 IST" duration-ms="2223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- first -->
+        <test-method signature="logout()[pri:2, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-24T10:19:03 IST" name="logout" finished-at="2023-08-24T10:19:25 IST" duration-ms="22402" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[expected [https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers] but found [https://opensource-demo.orangehrmlive.com/web/index.php/admin/saveSystemUser]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Logout"}
+  (Session info: chrome=116.0.5845.98)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d15ae2b7ee407937827850192f168bdc, findElement {using=link text, value=Logout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.98, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\HARSH\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50848}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50848/devtoo..., se:cdpVersion: 116.0.5845.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d15ae2b7ee407937827850192f168bdc]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers] but found [https://opensource-demo.orangehrmlive.com/web/index.php/admin/saveSystemUser]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at com.testing.asign2.Assign2.empadd(Assign2.java:277)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Logout"}
+  (Session info: chrome=116.0.5845.98)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d15ae2b7ee407937827850192f168bdc, findElement {using=link text, value=Logout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.98, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\HARSH\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50848}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50848/devtoo..., se:cdpVersion: 116.0.5845.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d15ae2b7ee407937827850192f168bdc
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at com.testing.asign2.Assign2.logout(Assign2.java:205)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -57,60 +119,22 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- empadd -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-23T16:23:56 IST" name="tearDown" finished-at="2023-08-23T16:23:57 IST" duration-ms="779" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=empadd status=FAILURE method=Assign2.empadd()[pri:0, instance:com.testing.asign2.Assign2@dd05255] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="first()[pri:0, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-23T16:23:57 IST" name="first" finished-at="2023-08-23T16:23:59 IST" duration-ms="1509" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- first -->
-        <test-method signature="login()[pri:1, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-23T16:23:59 IST" name="login" finished-at="2023-08-23T16:24:32 IST" duration-ms="33266" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-23T16:24:32 IST" name="tearDown" finished-at="2023-08-23T16:24:32 IST" duration-ms="311" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=login status=SUCCESS method=Assign2.login()[pri:1, instance:com.testing.asign2.Assign2@dd05255] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="first()[pri:0, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-23T16:24:32 IST" name="first" finished-at="2023-08-23T16:24:34 IST" duration-ms="1498" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- first -->
-        <test-method signature="logout()[pri:2, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-23T16:24:34 IST" name="logout" finished-at="2023-08-23T16:24:47 IST" duration-ms="13592" status="PASS">
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-23T16:24:47 IST" name="tearDown" finished-at="2023-08-23T16:24:48 IST" duration-ms="372" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-24T10:19:25 IST" name="tearDown" finished-at="2023-08-24T10:19:27 IST" duration-ms="1620" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=logout status=SUCCESS method=Assign2.logout()[pri:2, instance:com.testing.asign2.Assign2@dd05255] output={null}]]]>
+                <![CDATA[[TestResult name=logout status=FAILURE method=Assign2.logout()[pri:2, instance:com.testing.asign2.Assign2@dd05255] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-23T16:24:48 IST" name="afterTest" finished-at="2023-08-23T16:24:49 IST" duration-ms="849" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.testing.asign2.Assign2@dd05255]" started-at="2023-08-24T10:19:27 IST" name="afterTest" finished-at="2023-08-24T10:19:27 IST" duration-ms="777" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

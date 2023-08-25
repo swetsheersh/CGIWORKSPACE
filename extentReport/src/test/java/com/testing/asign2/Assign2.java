@@ -77,8 +77,9 @@ public class Assign2 {
 			test.log(Status.FAIL, "Test Case Failed is "+result.getThrowable());//to add error/exception
 			
 			String screenshotpath=Assign2.getScreenShot(driver, result.getName());
-			
-			test.addScreenCaptureFromPath(screenshotpath);
+			//test.addScreenCaptureFromPath(screenshotpath, "fail");
+			String screenshotpath1="D:\\Projects\\Cgi\\extentReport\\"+screenshotpath;
+			test.addScreenCaptureFromPath(screenshotpath1);
 		}else if(result.getStatus()==ITestResult.SKIP) {
 			test.log(Status.SKIP, "Test Case Skipped is "+result.getName());
 		}else if(result.getStatus()==ITestResult.SUCCESS) {
@@ -94,7 +95,7 @@ public class Assign2 {
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		File source=ts.getScreenshotAs(OutputType.FILE);
 		//after execution ,you could see a folder "failedTestsScreenshots" under src folder
-		String destination =System.getProperty("user-dir")+"/Screenshots/"+screenshotName+dateName+".png";
+		String destination =System.getProperty("user-dir")+"screenshots/"+screenshotName+dateName+".jpg";
 		File finalDestination=new File(destination);
 		FileUtils.copyFile(source, finalDestination);
 		return destination;

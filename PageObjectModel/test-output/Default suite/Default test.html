@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>13/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/13</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Aug 23 15:48:54 IST 2023</td>
+<td>Started on:</td><td>Fri Aug 25 11:36:01 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>157 seconds (157727 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1158 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,70 +76,914 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.loginTest()'><b>loginTest</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest<br>Parameters: Test, Test@123, FALSE</td>
-<td></td>
-<td>7</td>
-<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f</td></tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.beforeTest()'><b>beforeTest</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\HARSH\AppData\Local\Temp\testng-eclipse--493379898\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace254801937", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace254801937'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\HARSH\AppData\Local\Temp\testng-eclipse--493379898\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>-1692943561</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.forgetTest()'><b>forgetTest</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest<br>Parameters: Terst@Test.com, FALSE</td>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.tearDown()'><b>tearDown</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest</td>
 <td></td>
-<td>9</td>
-<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f</td></tr>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
 <tr>
-<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.verifyRegister()'><b>verifyRegister</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest<br>Parameters: Saurav, Gautam, gautam.saurav@gmail.com, gautam.saurav@gmail.com, Saurav@127, 4.0, 5.0, 2005.0, Female, TRUE</td>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.beforeMethod()'><b>beforeMethod</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest</td>
 <td></td>
-<td>13</td>
-<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f</td></tr>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
 <tr>
-<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.verifyRegister()'><b>verifyRegister</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest<br>Parameters: Saurav1, Gautam, gautam.saurav@gmail.com, gautam.saurav@gmail.com, Saurav@123, 1.0, 1.0, 1990.0, Male, FALSE</td>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.beforeMethod()'><b>beforeMethod</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest</td>
 <td></td>
-<td>13</td>
-<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f</td></tr>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
 <tr>
-<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.verifyRegister()'><b>verifyRegister</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest<br>Parameters: Saurav, Gautam, gautam.saurav@gmail.com, gautam.saurav@gmail.com, Saurav@130, 30.0, 11.0, 1905.0, Custom, TRUE</td>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.tearDown()'><b>tearDown</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest</td>
 <td></td>
-<td>13</td>
-<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f</td></tr>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
 <tr>
-<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.forgetTest()'><b>forgetTest</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest<br>Parameters: saurav.gautam@gmail.com, TRUE</td>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.tearDown()'><b>tearDown</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest</td>
 <td></td>
-<td>9</td>
-<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f</td></tr>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
 <tr>
-<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.verifyRegister()'><b>verifyRegister</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest<br>Parameters: Saurav, Gautam, gautam.saurav@gmail.com, gautam.saurav@gmail.com, Saurav@126, 3.0, 4.0, 2005.0, Female, TRUE</td>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.beforeMethod()'><b>beforeMethod</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest</td>
 <td></td>
-<td>13</td>
-<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f</td></tr>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.beforeMethod()'><b>beforeMethod</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest</td>
+<td></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.tearDown()'><b>tearDown</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest</td>
+<td></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.beforeMethod()'><b>beforeMethod</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest</td>
+<td></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.tearDown()'><b>tearDown</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest</td>
+<td></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.tearDown()'><b>tearDown</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest</td>
+<td></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.beforeMethod()'><b>beforeMethod</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest</td>
+<td></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.afterTest()'><b>afterTest</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest</td>
+<td></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.beforeMethod()'><b>beforeMethod</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest</td>
+<td></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.beforeMethod()'><b>beforeMethod</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest</td>
+<td></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.beforeMethod()'><b>beforeMethod</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest</td>
+<td></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.tearDown()'><b>tearDown</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest</td>
+<td></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.tearDown()'><b>tearDown</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest</td>
+<td></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.beforeMethod()'><b>beforeMethod</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest</td>
+<td></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.tearDown()'><b>tearDown</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest</td>
+<td></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.tearDown()'><b>tearDown</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest</td>
+<td></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.beforeMethod()'><b>beforeMethod</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest</td>
+<td></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.tearDown()'><b>tearDown</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest</td>
+<td></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.tearDown()'><b>tearDown</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest</td>
+<td></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.beforeMethod()'><b>beforeMethod</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest</td>
+<td></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.tearDown()'><b>tearDown</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest</td>
+<td></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.beforeMethod()'><b>beforeMethod</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest</td>
+<td></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.verifyRegister()'><b>verifyRegister</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest<br>Parameters: Saurav, Gautam, gautam.saurav@gmail.com, gautam.saurav@gmail.com, Saurav@129, 29.0, 9.0, 1918.0, Female, TRUE</td>
-<td></td>
-<td>13</td>
-<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f</td></tr>
-<tr>
-<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.verifyRegister()'><b>verifyRegister</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest<br>Parameters: Saurav, Gautam, gautam.saurav@gmail.com, gautam.saurav@gmail.com, Saurav@124, 2.0, 2.0, 1995.0, Female, TRUE</td>
-<td></td>
-<td>13</td>
-<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f</td></tr>
-<tr>
-<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.loginTest()'><b>loginTest</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest<br>Parameters: Test12, Test@589, FALSE</td>
-<td></td>
-<td>7</td>
-<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f</td></tr>
-<tr>
-<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.verifyRegister()'><b>verifyRegister</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest<br>Parameters: Saurav9, Gautam, gautam.saurav@gmail.com, gautam.saurav@gmail.com, Saurav@131, 31.0, 12.0, 1998.0, Male, FALSE</td>
-<td></td>
-<td>13</td>
-<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f</td></tr>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\HARSH\AppData\Local\Temp\testng-eclipse--493379898\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1220759559", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1220759559'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\HARSH\AppData\Local\Temp\testng-eclipse--493379898\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
 <tr>
 <td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.verifyRegister()'><b>verifyRegister</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest<br>Parameters: Saurav, Gautam, gautam.saurav@gmail.com, gautam.saurav@gmail.com, Saurav@125, 3.0, 3.0, 2000.0, Female, TRUE</td>
-<td></td>
-<td>13</td>
-<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f</td></tr>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\HARSH\AppData\Local\Temp\testng-eclipse--493379898\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace429058804", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace429058804'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\HARSH\AppData\Local\Temp\testng-eclipse--493379898\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.verifyRegister()'><b>verifyRegister</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest<br>Parameters: Saurav, Gautam, gautam.saurav@gmail.com, gautam.saurav@gmail.com, Saurav@127, 4.0, 5.0, 2005.0, Female, TRUE</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\HARSH\AppData\Local\Temp\testng-eclipse--493379898\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace567852222", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace567852222'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\HARSH\AppData\Local\Temp\testng-eclipse--493379898\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.loginTest()'><b>loginTest</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest<br>Parameters: Test12, Test@589, FALSE</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\HARSH\AppData\Local\Temp\testng-eclipse--493379898\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace955611965", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace955611965'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\HARSH\AppData\Local\Temp\testng-eclipse--493379898\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.forgetTest()'><b>forgetTest</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest<br>Parameters: saurav.gautam@gmail.com, TRUE</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\HARSH\AppData\Local\Temp\testng-eclipse--493379898\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1868578441", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1868578441'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\HARSH\AppData\Local\Temp\testng-eclipse--493379898\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.verifyRegister()'><b>verifyRegister</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest<br>Parameters: Saurav, Gautam, gautam.saurav@gmail.com, gautam.saurav@gmail.com, Saurav@124, 2.0, 2.0, 1995.0, Female, TRUE</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\HARSH\AppData\Local\Temp\testng-eclipse--493379898\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1433956626", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1433956626'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\HARSH\AppData\Local\Temp\testng-eclipse--493379898\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.verifyRegister()'><b>verifyRegister</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest<br>Parameters: Saurav9, Gautam, gautam.saurav@gmail.com, gautam.saurav@gmail.com, Saurav@131, 31.0, 12.0, 1998.0, Male, FALSE</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\HARSH\AppData\Local\Temp\testng-eclipse--493379898\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace188791662", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace188791662'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\HARSH\AppData\Local\Temp\testng-eclipse--493379898\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.verifyRegister()'><b>verifyRegister</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest<br>Parameters: Saurav, Gautam, gautam.saurav@gmail.com, gautam.saurav@gmail.com, Saurav@130, 30.0, 11.0, 1905.0, Custom, TRUE</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\HARSH\AppData\Local\Temp\testng-eclipse--493379898\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace418513504", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace418513504'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\HARSH\AppData\Local\Temp\testng-eclipse--493379898\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.forgetTest()'><b>forgetTest</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest<br>Parameters: Terst@Test.com, FALSE</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\HARSH\AppData\Local\Temp\testng-eclipse--493379898\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1768127248", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1768127248'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\HARSH\AppData\Local\Temp\testng-eclipse--493379898\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
 <tr>
 <td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.verifyRegister()'><b>verifyRegister</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest<br>Parameters: Saurav, Gautam, gautam.saurav@gmail.com, gautam.saurav@gmail.com, Saurav@128, 5.0, 6.0, 2005.0, Female, TRUE</td>
-<td></td>
-<td>13</td>
-<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@815b41f</td></tr>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\HARSH\AppData\Local\Temp\testng-eclipse--493379898\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace405036720", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace405036720'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\HARSH\AppData\Local\Temp\testng-eclipse--493379898\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.verifyRegister()'><b>verifyRegister</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest<br>Parameters: Saurav1, Gautam, gautam.saurav@gmail.com, gautam.saurav@gmail.com, Saurav@123, 1.0, 1.0, 1990.0, Male, FALSE</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\HARSH\AppData\Local\Temp\testng-eclipse--493379898\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace371976476", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace371976476'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\HARSH\AppData\Local\Temp\testng-eclipse--493379898\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.loginTest()'><b>loginTest</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest<br>Parameters: Test, Test@123, FALSE</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\HARSH\AppData\Local\Temp\testng-eclipse--493379898\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace42820240", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace42820240'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\HARSH\AppData\Local\Temp\testng-eclipse--493379898\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
+<tr>
+<td title='SeleniumPOM.Assign.PageObjectModel.FacebookTest.verifyRegister()'><b>verifyRegister</b><br>Test class: SeleniumPOM.Assign.PageObjectModel.FacebookTest<br>Parameters: Saurav, Gautam, gautam.saurav@gmail.com, gautam.saurav@gmail.com, Saurav@126, 3.0, 4.0, 2005.0, Female, TRUE</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\HARSH\AppData\Local\Temp\testng-eclipse--493379898\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1059634518", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1059634518'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\HARSH\AppData\Local\Temp\testng-eclipse--493379898\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>SeleniumPOM.Assign.PageObjectModel.FacebookTest@44c03695</td></tr>
 </table><p>
 </body>
 </html>

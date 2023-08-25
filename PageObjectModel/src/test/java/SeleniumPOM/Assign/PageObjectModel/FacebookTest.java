@@ -13,6 +13,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 
 import static org.testng.Assert.assertEquals;
 
@@ -34,6 +35,10 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -50,8 +55,9 @@ public class FacebookTest {
 	public ExtentTest test;
 	
 	//extent report configuration before executing tests
+	@Parameters("browser")   //taking data from testing.xml file under parameter tag
 	@BeforeTest
-	public void beforeTest() {
+	public void beforeTest(String br) {
 		//to create the report file
 		this.spark=new ExtentSparkReporter(System.getProperty("user.dir")+"/test-output/myReport.html");
 		spark.config().setDocumentTitle("Automation Report");//title of the report
@@ -66,6 +72,23 @@ public class FacebookTest {
 		extent.setSystemInfo("os","Windows 10");
 		extent.setSystemInfo("Tester Name", "Swet Sheersh");
 		extent.setSystemInfo("Browser", "Chrome");
+		
+		//Cross Browser Test
+		if(br.equals("chrome")) {
+			  ChromeOptions options=new ChromeOptions();
+			  options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+			  this.driver=new ChromeDriver(options);
+		  }else if(br.equals("firefox")) {
+			  FirefoxOptions options=new FirefoxOptions();
+			  options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+			  this.driver=new FirefoxDriver(options);
+		  }else if(br.equals("edge")) {
+			  EdgeOptions options=new EdgeOptions();
+			  options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+			  this.driver=new EdgeDriver(options);
+		  }
+		  driver.get("https://www.facebook.com/");
+		  driver.manage().window().maximize();
 		
 	}
 	@AfterTest
@@ -167,15 +190,25 @@ public class FacebookTest {
 	  this.log=new Login(driver);
 	  this.forPass=new ForgetPass(driver);
   }
-
+  //@Parameters("browser")
   @BeforeSuite
-  public void beforeSuite() {
+  public void beforeSuite(/*String br*/) {
 	  System.out.println("Register Test...");
-	  ChromeOptions options=new ChromeOptions();
-	  options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-	  this.driver=new ChromeDriver(options);
+	/*  if(br.equals("chrome")) {
+		  ChromeOptions options=new ChromeOptions();
+		  options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+		  this.driver=new ChromeDriver(options);
+	  }else if(br.equals("firefox")) {
+		  FirefoxOptions options=new FirefoxOptions();
+		  options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+		  this.driver=new FirefoxDriver(options);
+	  }else if(br.equals("edge")) {
+		  EdgeOptions options=new EdgeOptions();
+		  options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+		  this.driver=new EdgeDriver(options);
+	  }
 	  driver.get("https://www.facebook.com/");
-	  driver.manage().window().maximize();
+	  driver.manage().window().maximize();*/
   }
   
   @DataProvider
