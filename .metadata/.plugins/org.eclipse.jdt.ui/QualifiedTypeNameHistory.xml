@@ -1,20 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
-    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
-    <fullyQualifiedTypeName name="org.junit.jupiter.api.Order"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedCondition"/>
-    <fullyQualifiedTypeName name="SeleniumPOM.Assign.PageObjectModel.Login"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.Alert"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
-    <fullyQualifiedTypeName name="SeleniumPOM.Assign.PageObjectModel.ForgetPass"/>
-    <fullyQualifiedTypeName name="java.io.InputStream"/>
-    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
-    <fullyQualifiedTypeName name="java.util.Properties"/>
-    <fullyQualifiedTypeName name="java.lang.Object"/>
-    <fullyQualifiedTypeName name="javax.xml.parsers.DocumentBuilderFactory"/>
-    <fullyQualifiedTypeName name="javax.xml.parsers.DocumentBuilder"/>
     <fullyQualifiedTypeName name="org.w3c.dom.Document"/>
     <fullyQualifiedTypeName name="groovy.util.NodeList"/>
     <fullyQualifiedTypeName name="org.w3c.dom.NodeList"/>
@@ -22,13 +7,11 @@
     <fullyQualifiedTypeName name="org.w3c.dom.Element"/>
     <fullyQualifiedTypeName name="com.opencsv.CSVReader"/>
     <fullyQualifiedTypeName name="java.io.FileReader"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
     <fullyQualifiedTypeName name="com.aventstack.extentreports.ExtentTest"/>
     <fullyQualifiedTypeName name="com.aventstack.extentreports.reporter.ExtentSparkReporter"/>
     <fullyQualifiedTypeName name="com.aventstack.extentreports.reporter.configuration.Theme"/>
     <fullyQualifiedTypeName name="com.aventstack.extentreports.ExtentReports"/>
     <fullyQualifiedTypeName name="com.aventstack.extentreports.Status"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
@@ -40,12 +23,9 @@
     <fullyQualifiedTypeName name="org.testng.ITestResult"/>
     <fullyQualifiedTypeName name="io.cucumber.java.Before"/>
     <fullyQualifiedTypeName name="io.cucumber.java.BeforeAll"/>
-    <fullyQualifiedTypeName name="org.testng.annotations.BeforeTest"/>
     <fullyQualifiedTypeName name="org.testng.annotations.AfterTest"/>
     <fullyQualifiedTypeName name="org.testng.annotations.AfterMethod"/>
-    <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
     <fullyQualifiedTypeName name="org.testng.annotations.BeforeMethod"/>
-    <fullyQualifiedTypeName name="org.testng.annotations.BeforeSuite"/>
     <fullyQualifiedTypeName name="org.testng.annotations.DataProvider"/>
     <fullyQualifiedTypeName name="org.testng.annotations.AfterSuite"/>
     <fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
@@ -60,4 +40,24 @@
     <fullyQualifiedTypeName name="io.cucumber.java.en.Then"/>
     <fullyQualifiedTypeName name="io.cucumber.java.en.And"/>
     <fullyQualifiedTypeName name="com.selenium.cucumber.ForgetPass"/>
+    <fullyQualifiedTypeName name="com.beust.jcommander.Parameter"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
+    <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.WebDriverWait"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
+    <fullyQualifiedTypeName name="SeleniumPOM.Assign.PageObjectModel.Login"/>
+    <fullyQualifiedTypeName name="SeleniumPOM.Assign.PageObjectModel.Cart"/>
+    <fullyQualifiedTypeName name="org.testng.annotations.Optional"/>
+    <fullyQualifiedTypeName name="org.testng.annotations.BeforeTest"/>
+    <fullyQualifiedTypeName name="org.testng.annotations.BeforeSuite"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxOptions"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxDriver"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.edge.EdgeOptions"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.edge.EdgeDriver"/>
+    <fullyQualifiedTypeName name="org.testng.annotations.Parameters"/>
 </qualifiedTypeNameHistroy>
