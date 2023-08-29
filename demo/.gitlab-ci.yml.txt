@@ -1,0 +1,37 @@
+image: docker:19.03.1
+
+before_script:
+  - apk add --update openjdk11 maven
+
+stages:
+  - Clean
+  - Compile
+  - Test
+  - Package
+
+Clean:
+  stage: Clean
+  script:
+    - echo "Cleaning workspace..."
+    - rm -rf target
+
+Compile:
+  stage: Compile
+  script:
+    - echo "Compiling..."
+    - mvn compile
+
+Test:
+  stage: Test
+  script:
+    - echo "Running tests..."
+    - mvn test
+
+Package:
+  stage: Package
+  script:
+    - echo "Packaging..."
+    - mvn package
+
+after_script:
+  - echo "Pipeline completed."

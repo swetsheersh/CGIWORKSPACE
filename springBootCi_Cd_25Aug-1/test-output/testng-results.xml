@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-25T14:09:50 IST" name="Suite" finished-at="2023-08-25T14:09:53 IST" duration-ms="2129">
+    <groups>
+    </groups>
+    <test started-at="2023-08-25T14:09:50 IST" name="Test" finished-at="2023-08-25T14:09:53 IST" duration-ms="2129">
+      <class name="com.example.docker.SpringBootCiCd25Aug1ApplicationTests">
+        <test-method signature="contextLoads()[pri:0, instance:com.example.docker.SpringBootCiCd25Aug1ApplicationTests@72f926e6]" started-at="2023-08-25T14:09:50 IST" name="contextLoads" finished-at="2023-08-25T14:09:53 IST" duration-ms="2065" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contextLoads -->
+      </class> <!-- com.example.docker.SpringBootCiCd25Aug1ApplicationTests -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
