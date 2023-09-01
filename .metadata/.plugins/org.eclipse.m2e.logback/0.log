@@ -13035,3 +13035,4 @@ org.eclipse.core.runtime.CoreException: Launch configuration demo_testng.xml ref
 2023-08-29 14:49:37,192 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Projects\Cgi\FinalAssesment\src\test\resources
 2023-08-29 14:50:14,567 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Projects\Cgi\FinalAssesment\src\main\resources
 2023-08-29 14:50:14,571 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Projects\Cgi\FinalAssesment\src\test\resources
+2023-08-31 15:28:19,109 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
