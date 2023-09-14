@@ -5,9 +5,11 @@
     <classes>
       <class name="SeleniumPOM.capstone.testcases.NewTest">
         <methods>
-          <include name="searchProduct" invocation-numbers="1 2 3"/>
+          <include name="removeProductFromCart" invocation-numbers="0"/>
           <include name="beforeTest"/>
           <include name="tearDown"/>
+          <include name="filterAndVerify" invocation-numbers="0"/>
+          <include name="verifyLogin" invocation-numbers="0"/>
           <include name="beforeMethod"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>

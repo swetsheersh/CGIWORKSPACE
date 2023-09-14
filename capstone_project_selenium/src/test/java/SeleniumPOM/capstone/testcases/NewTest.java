@@ -6,13 +6,16 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.TakesScreenshot;
@@ -41,11 +44,13 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import SeleniumPOM.capstone.PageObjectModel.SearchProduct;
-import SeleniumPOM.capstone.PageObjectModel.ComparePrice;
+import SeleniumPOM.capstone.PageObjectModel.Login;
 import SeleniumPOM.capstone.PageObjectModel.FilterAndVerify;
 import SeleniumPOM.capstone.PageObjectModel.AddToCart;
 import SeleniumPOM.capstone.PageObjectModel.RemoveCart;
+import SeleniumPOM.capstone.utilities.CaptureScreenShot;
 import SeleniumPOM.capstone.utilities.MyUtility;
+import SeleniumPOM.capstone.utilities.NewDriver;
 
 public class NewTest {
 	//variables
@@ -55,7 +60,7 @@ public class NewTest {
 	//POM Class Objects
 	SearchProduct reg;
 	AddToCart log;
-	ComparePrice cp;
+	Login cp;
 	FilterAndVerify filter;
 	RemoveCart remove;
 	
@@ -96,7 +101,7 @@ public class NewTest {
 			test.log(Status.FAIL, "Test Case Failed is "+result.getName());//to add name in extent report
 			test.log(Status.FAIL, "Test Case Failed is "+result.getThrowable());//to add error/exception
 			
-			String screenshotpath=NewTest.getScreenShot(driver, result.getName());
+			String screenshotpath=CaptureScreenShot.getScreenShot(driver, result.getName());
 		
 			test.addScreenCaptureFromPath(screenshotpath);
 		}else if(result.getStatus()==ITestResult.SKIP) {
@@ -106,20 +111,6 @@ public class NewTest {
 		}
 	}
 	
-	//capture screenshot in case of failure
-	
-	public static String getScreenShot(WebDriver driver,String screenshotName)throws Exception{
-		MyUtility util=new MyUtility();
-		String dateName=new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-		TakesScreenshot ts=(TakesScreenshot)driver;
-		File source=ts.getScreenshotAs(OutputType.FILE);
-		//after execution ,you could see a folder "failedTestsScreenshots" under src folder
-		String destination =util.getPathOfScreenShots()+"\\"+screenshotName+dateName+".jpg";
-		File finalDestination=new File(destination);
-		FileUtils.copyFile(source, finalDestination);
-		return destination;
-			
-	}
 	  //It will execute before each test case
 	  @BeforeMethod
 	  public void beforeMethod() {
@@ -127,7 +118,7 @@ public class NewTest {
 		  this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		  this.reg=new SearchProduct(driver);
 		  this.log=new AddToCart(driver);
-		  this.cp=new ComparePrice(driver);
+		  this.cp=new Login(driver);
 		  this.filter=new FilterAndVerify(driver);
 		  this.remove=new RemoveCart(driver);
 	  }
@@ -144,20 +135,9 @@ public class NewTest {
 		  System.out.println("Register Test...");
 		  this.utility=new MyUtility();
 		  this.map= new HashMap<String, String>();
-		//Cross Browser Test
-		 if(this.utility.getDataFromProperties("browser").equals("chrome")) {
-			ChromeOptions options=new ChromeOptions();
-			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-			this.driver=new ChromeDriver(options);
-		 }else if(this.utility.getDataFromProperties("browser").equals("firefox")) {
-			FirefoxOptions options=new FirefoxOptions();
-			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-			this.driver=new FirefoxDriver(options);
-		 }else if(this.utility.getDataFromProperties("browser").equals("edge")) {
-			EdgeOptions options=new EdgeOptions();
-			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-			this.driver=new EdgeDriver(options);
-		 }
+		  //getting driver on the basis of properties file
+		  this.driver=NewDriver.getDriver();
+		  //Navigating to URL
 		  driver.get("https://www.flipkart.com/");
 		  driver.manage().window().maximize();
 	  }
@@ -170,87 +150,153 @@ public class NewTest {
 	  
 	  //TestCases
 	  
-	  @Test(dataProvider = "dp",priority = 0)
-	  public void searchProduct(String d1,String d2,String exp) throws Exception {
+	  @Test(dataProvider = "dp",priority = 1)
+	  public void searchProduct(String d1,String d2,String d3,String searchData,String exp) throws Exception {
 
 		  this.test=extent.createTest("search Product");
 		  //Automation code using POM class
+		  //Sometime popup is not visible, so try block is there
+		  this.driver.navigate().to("https://www.flipkart.com/");
+		  try {
+			  this.reg.clickCross();
+		  }catch (Exception e) {
+			  System.out.println("PopUp not found");
+			  test.log(Status.PASS, "popup not found");
+		  }
+		  this.reg.sendDataToSearch(searchData);
+		  this.reg.submitSearch();
+		  test.log(Status.PASS, "Search Bar Found");
+		  this.reg.clickIphone14();
+		  Thread.sleep(5000);
+		  //Handling Window
+		  List<String> l1=new ArrayList<String>(driver.getWindowHandles());
+		  if(l1.size()>1) {
+			  driver.switchTo().window(l1.get(1));
+		  }
+		  test.log(Status.PASS, "Same Product Found");
+		  test.createNode("Verify product name");
+		  assertEquals(this.driver.getPageSource().contains(d1),Boolean.parseBoolean(exp));
+		  test.createNode("Verify product price");
+		  assertEquals(this.reg.getPrice().contains(d2),Boolean.parseBoolean(exp));
+		  test.createNode("Verify page Title");
+		  assertEquals(this.driver.getTitle(),d3);
+		  map.put(reg.getNameIphone14(), reg.getPrice());
+		  System.out.println(map.get(reg.getNameIphone14()));
 		  
-		  //remove this statement only to show how data is taken from data provider
-		  System.out.println("Data1: "+d1+", Data2: "+d2);
-		  
-		  
-		  
-		  
-		  
-		  
-		  test.createNode("add any name");
-		  assertEquals(this.driver.getPageSource().contains(""),Boolean.parseBoolean(exp));
 		  Thread.sleep(1000);
 		  driver.manage().deleteAllCookies();
 		  
-		  
 	  }
 	  
-	  @Test(dataProvider = "dp1",priority = 1)
+	  @Test(dataProvider = "dp1",priority = 2)
 	  public void addToCart(String d1,String d2,String exp) throws Exception {
 		  
 		  this.test=extent.createTest("Add To Cart");
 		  //Automation code using POM class
+		  Thread.sleep(3000);
 		  
+		  this.driver.navigate().to("https://www.flipkart.com/");
+		  try {
+			  this.log.clickCross();
+		  }catch (Exception e) {
+			  System.out.println("PopUp not found");
+			  test.log(Status.PASS, "popup not found");
+		  }
+		  this.log.sendDataToSearch("mobile");
+		  this.log.submitSearch();
+		  this.log.clickmobile();
+
+		  //Handling Window
+		  List<String> l1=new ArrayList<String>(driver.getWindowHandles());
+		  if(l1.size()>2) {
+			  driver.switchTo().window(l1.get(2));
+		  }
+		  this.log.selectAddToCart();
+		  test.log(Status.PASS, "Add to cart button Found");
+		  Thread.sleep(3000);
+		  test.createNode("Verify URL");
+		  assertEquals(this.driver.getCurrentUrl(),d1);
+		  Thread.sleep(3000);
+		  test.createNode("Verify Product Added to cart");
+		  assertEquals(this.log.getPrice(),d2);
 		  
-		//remove this statement only to show how data is taken from data provider
-		  System.out.println("Data1: "+d1+", Data2: "+d2);
-		  
-		  
-		  
-		  
-		  
-		  test.createNode("add any name");
-		  assertEquals(this.driver.getPageSource().contains(""),Boolean.parseBoolean(exp));
-		  Thread.sleep(1000);
+		  Thread.sleep(5000);
 		  driver.manage().deleteAllCookies();
 		  
 		  
 	  }
 	  
-	  @Test(dataProvider = "dp2",priority = 2)
-	  public void filterAndVerify(String d1,String d2,String exp) throws Exception {
+	  @Test(dataProvider = "dp2",priority = 3)
+	  public void filterAndVerify(String d1,String d2,String d3,String exp) throws Exception {
 		  
 		  this.test=extent.createTest("Filter And Verify the Product");
 		  //Automation code using POM class
 		  
+		  this.driver.navigate().to("https://www.flipkart.com/");
 		  
-		//remove this statement only to show how data is taken from data provider
-		  System.out.println("Data1: "+d1+", Data2: "+d2);
+		  try {
+			  this.filter.clickCross();
+		  }catch (Exception e) {
+			  System.out.println("PopUp not found");
+			  test.log(Status.PASS, "popup not found");
+		  }
 		  
+		  this.filter.clickMobile();
+		  test.log(Status.PASS, "product verified");
+		  this.filter.filterApple();
+		  this.filter.filterNewFirst();
+		  test.log(Status.PASS, "Filter Working Properly");
+		  Thread.sleep(2000);
+		  this.filter.clickIphone14();
 		  
+		  Thread.sleep(5000);
+		  //Handling Window
+		  List<String> l1=new ArrayList<String>(driver.getWindowHandles());
+		  if(l1.size()>3) {
+			  driver.switchTo().window(l1.get(3));
+		  }
+		  test.createNode("Verify product name");
+		  assertEquals(this.driver.getPageSource().contains(d1),Boolean.parseBoolean(exp));
+
+		  test.createNode("Verify page Title");
+		  assertEquals(this.driver.getTitle().contains(d3),Boolean.parseBoolean(exp));
 		  
-		  
-		  
-		  test.createNode("add any name");
-		  assertEquals(this.driver.getPageSource().contains(""),Boolean.parseBoolean(exp));
 		  Thread.sleep(1000);
 		  driver.manage().deleteAllCookies();
 		  
 	  }
 	  
-	  @Test(dataProvider = "dp3",priority = 3)
-	  public void comparePrice(String d1,String d2,String exp) throws Exception {
+	  @Test(dataProvider = "dp3",priority = 0)
+	  public void verifyLogin(String d1,String d2,String exp) throws Exception {
 		  
-		  this.test=extent.createTest("Compare Price");
+		  this.test=extent.createTest("Verify Login Whether asking for otp or You are Human");
 		  //Automation code using POM class
 		  
+		  try {
+			  this.cp.clickCross();
+		  }catch (Exception e) {
+			  System.out.println("PopUp not found");
+			  test.log(Status.PASS, "popup not found");		  
+		  }
 		  
-		//remove this statement only to show how data is taken from data provider
-		  System.out.println("Data1: "+d1+", Data2: "+d2);
+		  this.cp.clickLoginTab();
+		  test.createNode("Verify Login Page");
+		  assertEquals(this.driver.getCurrentUrl(),d1);
+		  test.log(Status.PASS, "verify Login Button");
+		  
+		  this.cp.sendPhoneNumber(d2);
+		  this.cp.clickRequestOtp();
+		  test.log(Status.PASS, "Verify RequestOTP");
+		  Thread.sleep(Duration.ofSeconds(15));
 		  
 		  
 		  
-		  
-		  
-		  test.createNode("add any name");
-		  assertEquals(this.driver.getPageSource().contains(""),Boolean.parseBoolean(exp));
+		  test.createNode("Verifying Software Blocks Automated Action or Asking for OTP");
+		  if(this.driver.getPageSource().contains("Please enter the OTP sent to")){
+			  assertEquals(this.driver.getPageSource().contains("Please enter the OTP sent to"),Boolean.parseBoolean(exp));
+		  }else {
+			  assertEquals(this.driver.getPageSource().contains("Press"),Boolean.parseBoolean(exp));
+		  }
 		  Thread.sleep(1000);
 		  driver.manage().deleteAllCookies();
 		  
@@ -262,16 +308,51 @@ public class NewTest {
 		  this.test=extent.createTest("Remove Product From Cart");
 		  //Automation code using POM class
 		  
+		  Thread.sleep(3000);
 		  
-		//remove this statement only to show how data is taken from data provider
-		  System.out.println("Data1: "+d1+", Data2: "+d2);
+		  this.driver.navigate().to("https://www.flipkart.com/");
 		  
+		  try {
+			  this.remove.clickCross();
+		  }catch (Exception e) {
+			  System.out.println("PopUp not found");
+			  test.log(Status.PASS, "popup not found");
+		  }
 		  
+		  this.remove.sendDataToSearch("mobile");
+		  this.remove.submitSearch();
+		  this.remove.clickmobile();
 		  
+		//Handling Window
+		  List<String> l1=new ArrayList<String>(driver.getWindowHandles());
+		  if(l1.size()>4) {
+			  driver.switchTo().window(l1.get(4));
+		  }
 		  
+		  this.remove.selectAddToCart();
+		  /*System.out.println(this.log.getPrice());
+		  System.out.println(this.driver.getCurrentUrl());*/
+		  map.put(remove.getPname(), remove.getPprice());
+		  if (map.containsKey(remove.getPname())) {
+			   Object value = map.get(remove.getPname());
+			 System.out.println("Pname : " + remove.getPname() +" price :"+ value);
+			 }
 		  
-		  test.createNode("add any name");
-		  assertEquals(this.driver.getPageSource().contains(""),Boolean.parseBoolean(exp));
+		  test.log(Status.PASS, "verify cart");
+		  
+		  JavascriptExecutor js=(JavascriptExecutor)driver;
+		  js.executeScript("window.scrollBy(0,250)");
+		  this.remove.clickremove();
+		  /*Thread.sleep(3000);
+		  Alert alert=driver.switchTo().alert();
+		  alert.accept();*/
+		  Thread.sleep(3000);
+		  this.remove.clickremovepopup();
+		  test.log(Status.PASS, "verify Remove Button");
+		  test.createNode("Verify product is removed from cart");
+		  assertEquals(this.remove.verifyCart(),d1);
+		  test.createNode("Verify product price");
+		  assertEquals(this.remove.getloginverify(),d2);
 		  Thread.sleep(1000);
 		  driver.manage().deleteAllCookies();
 		  

@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="2" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-01T16:17:40 IST" name="Suite" finished-at="2023-09-01T16:17:47 IST" duration-ms="7208">
+  <suite started-at="2023-09-11T14:45:24 IST" name="Default suite" finished-at="2023-09-11T14:48:13 IST" duration-ms="169508">
     <groups>
     </groups>
-    <test started-at="2023-09-01T16:17:40 IST" name="Test" finished-at="2023-09-01T16:17:47 IST" duration-ms="7208">
+    <test started-at="2023-09-11T14:45:24 IST" name="Default test" finished-at="2023-09-11T14:48:13 IST" duration-ms="169508">
       <class name="SeleniumPOM.capstone.testcases.NewTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@44c03695]" started-at="2023-09-01T16:17:36 IST" name="beforeSuite" finished-at="2023-09-01T16:17:40 IST" duration-ms="3912" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@1165b38]" started-at="2023-09-11T14:45:10 IST" name="beforeSuite" finished-at="2023-09-11T14:45:24 IST" duration-ms="14235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@44c03695]" started-at="2023-09-01T16:17:40 IST" name="beforeTest" finished-at="2023-09-01T16:17:40 IST" duration-ms="341" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@1165b38]" started-at="2023-09-11T14:45:24 IST" name="beforeTest" finished-at="2023-09-11T14:45:24 IST" duration-ms="643" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@44c03695]" started-at="2023-09-01T16:17:41 IST" name="beforeMethod" finished-at="2023-09-01T16:17:41 IST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@1165b38]" started-at="2023-09-11T14:45:26 IST" name="beforeMethod" finished-at="2023-09-11T14:45:26 IST" duration-ms="90" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="searchProduct(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@44c03695]" started-at="2023-09-01T16:17:41 IST" name="searchProduct" data-provider="dp" finished-at="2023-09-01T16:17:42 IST" duration-ms="1061" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@1165b38]" started-at="2023-09-11T14:45:26 IST" name="verifyLogin" data-provider="dp3" finished-at="2023-09-11T14:45:27 IST" duration-ms="1296" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Hello]]>
+                <![CDATA[https://www.flipkart.com/account/login?ret=%2Faccount%2F%3Frd%3D0%26link%3Dhome_account]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Hello]]>
+                <![CDATA[6207712568]]>
               </value>
             </param>
             <param index="2">
@@ -37,34 +37,122 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://www.flipkart.com/account/login?ret=%2Faccount%2F%3Frd%3D0%26link%3Dhome_account] but found [https://www.flipkart.com/]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://www.flipkart.com/account/login?ret=%2Faccount%2F%3Frd%3D0%26link%3Dhome_account] but found [https://www.flipkart.com/]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at SeleniumPOM.capstone.testcases.NewTest.verifyLogin(NewTest.java:284)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchProduct -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@44c03695]" started-at="2023-09-01T16:17:42 IST" name="tearDown" finished-at="2023-09-01T16:17:42 IST" duration-ms="19" status="PASS">
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@1165b38]" started-at="2023-09-11T14:45:27 IST" name="tearDown" finished-at="2023-09-11T14:45:28 IST" duration-ms="671" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searchProduct status=SUCCESS method=NewTest.searchProduct(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@44c03695] output={null}]]]>
+                <![CDATA[[TestResult name=verifyLogin status=FAILURE method=NewTest.verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@1165b38] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@44c03695]" started-at="2023-09-01T16:17:42 IST" name="beforeMethod" finished-at="2023-09-01T16:17:42 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@1165b38]" started-at="2023-09-11T14:45:28 IST" name="beforeMethod" finished-at="2023-09-11T14:45:28 IST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="addToCart(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:SeleniumPOM.capstone.testcases.NewTest@44c03695]" started-at="2023-09-01T16:17:42 IST" name="addToCart" data-provider="dp1" finished-at="2023-09-01T16:17:43 IST" duration-ms="1038" status="PASS">
+        <test-method signature="searchProduct(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:SeleniumPOM.capstone.testcases.NewTest@1165b38]" started-at="2023-09-11T14:45:28 IST" name="searchProduct" data-provider="dp" finished-at="2023-09-11T14:45:59 IST" duration-ms="30489" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Hello]]>
+                <![CDATA[APPLE iPhone 14 (Midnight, 128 GB)]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Hello]]>
+                <![CDATA[67,999]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[APPLE iPhone 14 ( 128 GB Storage ) Online at Best Price On Flipkart.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Iphone14]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[TRUE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProduct -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@1165b38]" started-at="2023-09-11T14:45:59 IST" name="tearDown" finished-at="2023-09-11T14:45:59 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchProduct status=SUCCESS method=NewTest.searchProduct(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:SeleniumPOM.capstone.testcases.NewTest@1165b38] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@1165b38]" started-at="2023-09-11T14:45:59 IST" name="beforeMethod" finished-at="2023-09-11T14:45:59 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="addToCart(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:SeleniumPOM.capstone.testcases.NewTest@1165b38]" started-at="2023-09-11T14:45:59 IST" name="addToCart" data-provider="dp1" finished-at="2023-09-11T14:46:21 IST" duration-ms="22594" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.flipkart.com/viewcart?exploreMode=true&preference=FLIPKART]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Total Amount]]>
               </value>
             </param>
             <param index="2">
@@ -76,134 +164,247 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCart -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@44c03695]" started-at="2023-09-01T16:17:43 IST" name="tearDown" finished-at="2023-09-01T16:17:43 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@1165b38]" started-at="2023-09-11T14:46:21 IST" name="tearDown" finished-at="2023-09-11T14:46:21 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addToCart status=SUCCESS method=NewTest.addToCart(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:SeleniumPOM.capstone.testcases.NewTest@44c03695] output={null}]]]>
+                <![CDATA[[TestResult name=addToCart status=SUCCESS method=NewTest.addToCart(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:SeleniumPOM.capstone.testcases.NewTest@1165b38] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@44c03695]" started-at="2023-09-01T16:17:43 IST" name="beforeMethod" finished-at="2023-09-01T16:17:43 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@1165b38]" started-at="2023-09-11T14:46:21 IST" name="beforeMethod" finished-at="2023-09-11T14:46:21 IST" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="filterAndVerify(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:SeleniumPOM.capstone.testcases.NewTest@44c03695]" started-at="2023-09-01T16:17:43 IST" name="filterAndVerify" data-provider="dp2" finished-at="2023-09-01T16:17:44 IST" duration-ms="1048" status="PASS">
+        <test-method signature="filterAndVerify(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:SeleniumPOM.capstone.testcases.NewTest@1165b38]" started-at="2023-09-11T14:46:21 IST" name="filterAndVerify" data-provider="dp2" finished-at="2023-09-11T14:46:51 IST" duration-ms="30081" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Hello]]>
+                <![CDATA[APPLE iPhone 14]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Hello]]>
+                <![CDATA[67,999]]>
               </value>
             </param>
             <param index="2">
+              <value>
+                <![CDATA[APPLE iPhone 14]]>
+              </value>
+            </param>
+            <param index="3">
               <value>
                 <![CDATA[TRUE]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: MicrosoftEdge=116.0.1938.76)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [443f08d0feddb938de1e1315fae72415, clickElement {id=57976610D2E3F33098141A4EF32EA256_element_357}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 116.0.1938.76, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57425}, msedge: {msedgedriverVersion: 116.0.1938.76 (3ea752a1990a..., userDataDir: C:\Users\HARSH\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57425/devtoo..., se:cdpVersion: 116.0.1938.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on windows (443f08d0feddb938de1e1315fae72415)] -> xpath: /html/body/div/div/div[3]/div/div[2]/div[2]/div/div/div/a/div[2]/div[1]]
+Session ID: 443f08d0feddb938de1e1315fae72415]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: MicrosoftEdge=116.0.1938.76)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [443f08d0feddb938de1e1315fae72415, clickElement {id=57976610D2E3F33098141A4EF32EA256_element_357}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 116.0.1938.76, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57425}, msedge: {msedgedriverVersion: 116.0.1938.76 (3ea752a1990a..., userDataDir: C:\Users\HARSH\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57425/devtoo..., se:cdpVersion: 116.0.1938.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on windows (443f08d0feddb938de1e1315fae72415)] -> xpath: /html/body/div/div/div[3]/div/div[2]/div[2]/div/div/div/a/div[2]/div[1]]
+Session ID: 443f08d0feddb938de1e1315fae72415
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+at SeleniumPOM.capstone.PageObjectModel.FilterAndVerify.clickIphone14(FilterAndVerify.java:80)
+at SeleniumPOM.capstone.testcases.NewTest.filterAndVerify(NewTest.java:250)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filterAndVerify -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@44c03695]" started-at="2023-09-01T16:17:44 IST" name="tearDown" finished-at="2023-09-01T16:17:44 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@1165b38]" started-at="2023-09-11T14:46:51 IST" name="tearDown" finished-at="2023-09-11T14:46:52 IST" duration-ms="236" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=filterAndVerify status=SUCCESS method=NewTest.filterAndVerify(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:SeleniumPOM.capstone.testcases.NewTest@44c03695] output={null}]]]>
+                <![CDATA[[TestResult name=filterAndVerify status=FAILURE method=NewTest.filterAndVerify(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:SeleniumPOM.capstone.testcases.NewTest@1165b38] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@44c03695]" started-at="2023-09-01T16:17:44 IST" name="beforeMethod" finished-at="2023-09-01T16:17:44 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@1165b38]" started-at="2023-09-11T14:46:52 IST" name="beforeMethod" finished-at="2023-09-11T14:46:52 IST" duration-ms="26" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="comparePrice(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:SeleniumPOM.capstone.testcases.NewTest@44c03695]" started-at="2023-09-01T16:17:44 IST" name="comparePrice" data-provider="dp3" finished-at="2023-09-01T16:17:45 IST" duration-ms="1039" status="PASS">
+        <test-method signature="removeProductFromCart(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:SeleniumPOM.capstone.testcases.NewTest@1165b38]" started-at="2023-09-11T14:46:52 IST" name="removeProductFromCart" data-provider="dp4" finished-at="2023-09-11T14:48:08 IST" duration-ms="76634" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Hello]]>
+                <![CDATA[Missing Cart items?]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Hello]]>
+                <![CDATA[Login]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[TRUE]]>
+                <![CDATA[1.0]]>
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- comparePrice -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@44c03695]" started-at="2023-09-01T16:17:45 IST" name="tearDown" finished-at="2023-09-01T16:17:45 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=comparePrice status=SUCCESS method=NewTest.comparePrice(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:SeleniumPOM.capstone.testcases.NewTest@44c03695] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@44c03695]" started-at="2023-09-01T16:17:45 IST" name="beforeMethod" finished-at="2023-09-01T16:17:45 IST" duration-ms="7" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="removeProductFromCart(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:SeleniumPOM.capstone.testcases.NewTest@44c03695]" started-at="2023-09-01T16:17:45 IST" name="removeProductFromCart" data-provider="dp4" finished-at="2023-09-01T16:17:46 IST" duration-ms="1036" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Hello]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Hello]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[TRUE]]>
-              </value>
-            </param>
-          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: /html/body/div[1]/div/div[3]/div[1]/div[1]/div[2]/div/ul/li[1]/button' (tried for 20 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: /html/body/div[1]/div/div[3]/div[1]/div[1]/div[2]/div/ul/li[1]/button' (tried for 20 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at SeleniumPOM.capstone.PageObjectModel.RemoveCart.selectAddToCart(RemoveCart.java:78)
+at SeleniumPOM.capstone.testcases.NewTest.removeProductFromCart(NewTest.java:332)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/div[3]/div[1]/div[1]/div[2]/div/ul/li[1]/button"}
+  (Session info: MicrosoftEdge=116.0.1938.76)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [443f08d0feddb938de1e1315fae72415, findElement {using=xpath, value=/html/body/div[1]/div/div[3]/div[1]/div[1]/div[2]/div/ul/li[1]/button}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 116.0.1938.76, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57425}, msedge: {msedgedriverVersion: 116.0.1938.76 (3ea752a1990a..., userDataDir: C:\Users\HARSH\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57425/devtoo..., se:cdpVersion: 116.0.1938.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 443f08d0feddb938de1e1315fae72415
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy22.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeProductFromCart -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@44c03695]" started-at="2023-09-01T16:17:46 IST" name="tearDown" finished-at="2023-09-01T16:17:46 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@1165b38]" started-at="2023-09-11T14:48:08 IST" name="tearDown" finished-at="2023-09-11T14:48:09 IST" duration-ms="306" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=removeProductFromCart status=SUCCESS method=NewTest.removeProductFromCart(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:SeleniumPOM.capstone.testcases.NewTest@44c03695] output={null}]]]>
+                <![CDATA[[TestResult name=removeProductFromCart status=FAILURE method=NewTest.removeProductFromCart(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:SeleniumPOM.capstone.testcases.NewTest@1165b38] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@44c03695]" started-at="2023-09-01T16:17:46 IST" name="afterTest" finished-at="2023-09-01T16:17:47 IST" duration-ms="562" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@1165b38]" started-at="2023-09-11T14:48:09 IST" name="afterTest" finished-at="2023-09-11T14:48:13 IST" duration-ms="4519" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@44c03695]" started-at="2023-09-01T16:17:47 IST" name="afterSuite" finished-at="2023-09-01T16:17:47 IST" duration-ms="326" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:SeleniumPOM.capstone.testcases.NewTest@1165b38]" started-at="2023-09-11T14:48:14 IST" name="afterSuite" finished-at="2023-09-11T14:48:15 IST" duration-ms="1206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- SeleniumPOM.capstone.testcases.NewTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
